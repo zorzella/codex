@@ -334,7 +334,7 @@ C and C++ are quite different languages, but their existence is intertwined, so 
 
 There are several programming patterns that are used over and over again. Learning about them will help you not only come up with good solutions to problems you face, but also help you get up to speed with an unknown code base.
 
-* \[C7\] Read a book that does a rigorous discussion of some patterns. My favorite is the good old “Design Patterns: Elements of Reusable Object-Oriented Software” [https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr\_1\_1\_sspa?crid=29YYD60CPR6OE\&dib=eyJ2IjoiMSJ9.mTRaTOPYqsPcUsGD8aznte8IMQZZiYjv7\_Xwyyi1iS2agVs4KLcx5qwmrKiyIxDiiaA6QbUY3MCBnb28lUrTGOw4rZYq2Lhf6z4JylQnbFuTfD6WMSKZ2izHndzfV-Ky9NmDl7WsksMgVxIlYFmG7iOkspV9gCvaWen0y-NgyAB5h9heo2aiCmVs-15\_vB4oaJk39mlJ\_DXQdKEmTKZAaisgf\_stgMTzEpcnj8Ju6qc.UsxA9CKA92WPXqYKfZEDlzWh4BkKAfrgBstHbML-kUk\&dib\_tag=se\&keywords=design+patterns\&qid=1767328460\&sprefix=design+patterns%2Caps%2C215\&sr=8-1-spons\&sp\_csd=d2lkZ2V0TmFtZT1zcF9hdGY\&psc=1](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1_sspa?crid=29YYD60CPR6OE&dib=eyJ2IjoiMSJ9.mTRaTOPYqsPcUsGD8aznte8IMQZZiYjv7_Xwyyi1iS2agVs4KLcx5qwmrKiyIxDiiaA6QbUY3MCBnb28lUrTGOw4rZYq2Lhf6z4JylQnbFuTfD6WMSKZ2izHndzfV-Ky9NmDl7WsksMgVxIlYFmG7iOkspV9gCvaWen0y-NgyAB5h9heo2aiCmVs-15_vB4oaJk39mlJ_DXQdKEmTKZAaisgf_stgMTzEpcnj8Ju6qc.UsxA9CKA92WPXqYKfZEDlzWh4BkKAfrgBstHbML-kUk&dib_tag=se&keywords=design+patterns&qid=1767328460&sprefix=design+patterns%2Caps%2C215&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)  – it’s a bit outdated and there’s definitely more patterns to learn, but it’s very well-written.  
+* \[C7\] Read a book that does a rigorous discussion of some patterns. My favorite is the good old “Design Patterns: Elements of Reusable Object-Oriented Software” [book](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1_sspa?crid=29YYD60CPR6OE&dib=eyJ2IjoiMSJ9.mTRaTOPYqsPcUsGD8aznte8IMQZZiYjv7_Xwyyi1iS2agVs4KLcx5qwmrKiyIxDiiaA6QbUY3MCBnb28lUrTGOw4rZYq2Lhf6z4JylQnbFuTfD6WMSKZ2izHndzfV-Ky9NmDl7WsksMgVxIlYFmG7iOkspV9gCvaWen0y-NgyAB5h9heo2aiCmVs-15_vB4oaJk39mlJ_DXQdKEmTKZAaisgf_stgMTzEpcnj8Ju6qc.UsxA9CKA92WPXqYKfZEDlzWh4BkKAfrgBstHbML-kUk&dib_tag=se&keywords=design+patterns&qid=1767328460&sprefix=design+patterns%2Caps%2C215&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)  – it’s a bit outdated and there’s definitely more patterns to learn, but it’s very well-written.  
 * \[C7\] Some patterns you want to be very familiar with are listed here. For each, you want to be able to not only describe it, but also to think of at least one situation where it would be the right pattern to use:  
   * Singleton  
   * Static Factory Method  
@@ -475,7 +475,7 @@ These are four distinct subjects, each important to understand, but with some in
   * Understand what error checking and correction are  
     * Learn what parity checks and check digits are and how they are used  
     * Learn some simple error correction in depth  
-      * Wonderful video on Hemming Codes from 3Blue1Brown: [https://www.youtube.com/watch?v=X8jsijhllIA\&t=126s](https://www.youtube.com/watch?v=X8jsijhllIA&t=126s)  
+      * Wonderful video on Hemming Codes from 3Blue1Brown: [video](https://www.youtube.com/watch?v=X8jsijhllIA&t=126s)  
       * Reed-Solomon is also fun to learn  
     * Understand how it’s useful and used in everything from credit card numbers to bank slips to QR codes
 
@@ -517,7 +517,7 @@ These are four distinct subjects, each important to understand, but with some in
 # Time, Clocks, Calendars
 
 * \[C4\] Understand how messy it is to deal with time, clocks and calendars  
-  * Check out these “Falsehoods Programmers Believe About Time”: [https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca](https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca) – try to imagine why each of the statements is a falsehood  
+  * Check out these “Falsehoods Programmers Believe About Time” [list](https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca) – try to imagine why each of the statements is a falsehood  
 * \[C5\] Understand the need to use a testing double for clocks  
 * \[C4\] Understand the common ways to represent time in code  
   * E.g. millis since UNIX epoch
@@ -588,7 +588,7 @@ Software that has user-visible content needs to deal with not only being transla
 * \[C7\] Learn about the unique challenges of writing UI code  
 * \[C7\] Learn UI-specific patterns such as Model-View-Controller (MVC) and Model-View-Presenter (MVP)  
 * \[D8\] Have a general understanding of UX concepts and challenges  
-  * Good watch: “How We're Redesigning Audacity For The Future” [https://www.youtube.com/watch?v=QYM3TWf\_G38](https://www.youtube.com/watch?v=QYM3TWf_G38)  
+  * Good watch: “How We're Redesigning Audacity For The Future” [video](https://www.youtube.com/watch?v=QYM3TWf_G38)  
 * \[C4\] Understand the concept of A/B experiments  
 * \[C7\] Learn HTML / CSS  
 * \[B6\] Understand HTML Cookies  
@@ -766,10 +766,10 @@ There’s a few very useful query languages to learn.
 * \[C3\] Learn SQL. As discussed elsewhere  
 * \[C3\] Learn Regular expressions  
   * Useful “free-form string matching” in a variety of contexts, from development, to production code, to testing  
-  * Great resource to learn Regexp: [https://www.regular-expressions.info/tutorial.html](https://www.regular-expressions.info/tutorial.html)  
+  * Great resource to learn Regexp: [site](https://www.regular-expressions.info/tutorial.html)  
 * \[D3\] Learn Xpath  
   * Great power tool for querying XML / HTML  
-  * Great resource to learn xpath: [https://www.w3schools.com/xml/xpath\_intro.asp](https://www.w3schools.com/xml/xpath_intro.asp)  
+  * Great resource to learn xpath: [site](https://www.w3schools.com/xml/xpath_intro.asp)  
 * \[C3\] Learn jq  
   * Available through its eponymous CLI tool to query JSON  
 * \[D3\] Learn GraphQL. As discussed elsewhere
@@ -872,7 +872,7 @@ Note: below, I’ll be using the nomenclature `main` (instead of the old name `m
   * Could you, in principle, write your own version control system based on commits?  
 * \[B4\] Understand the difference between a pull and a fetch  
 * \[B4\] Understand how branches are just labels, and how to create and manage them  
-* \[B4\] Here’s a good visual resource for learning git internals [https://learngitbranching.js.org/?locale=en\_US](https://learngitbranching.js.org/?locale=en_US)  
+* \[B4\] Here’s a good visual resource for learning git internals: [interactive resource](https://learngitbranching.js.org/?locale=en_US)  
 * \[B6\] Understand how to look at history  
   * Git log  
   * Git reflog. And how to use that recover from disastrous mistakes  
@@ -907,8 +907,8 @@ Software development is a team activity that takes place over extended periods o
 
 * \[C4\] Understand the issues that plague software development  
   * Sometimes humor is the best way to convey a point, here’s a couple of such examples wrt project management  
-    * This [video](https://www.youtube.com/watch?v=saCdvksej0A%20) talk is painfully accurate: “Ignite\! 17th Century Shipbuild and Your Failed Software Project”: [https://www.youtube.com/watch?v=saCdvksej0A](https://www.youtube.com/watch?v=saCdvksej0A)   
-    * How Software Projects Really Work: [https://www.smart-words.org/jokes/project-tree-swing.png](https://www.smart-words.org/jokes/project-tree-swing.png)   
+    * This [video talk](https://www.youtube.com/watch?v=saCdvksej0A) is painfully accurate: “Ignite\! 17th Century Shipbuild and Your Failed Software Project”  
+    * How Software Projects Really Work: [illustration](https://www.smart-words.org/jokes/project-tree-swing.png)   
 * \[C6\] Understand the pre-Agile history of project management, particularly the Waterfall model  
   * Understand how Waterfall is still practiced in a handful of high-stake niche applications (such as aerospace, medical devices)
 
@@ -916,7 +916,7 @@ Software development is a team activity that takes place over extended periods o
 
 See the section on “Project Management” above. Agile was invented as a reaction to the issues of Waterfall, which was the prevalent way to develop before.
 
-* \[B5\] Read the Agile Manifesto [https://agilemanifesto.org/](https://agilemanifesto.org/)  and the linked principles of agile: [https://agilemanifesto.org/principles.html](https://agilemanifesto.org/principles.html)   
+* \[B5\] Read the [Agile Manifesto](https://agilemanifesto.org/) and the linked [principles of agile](https://agilemanifesto.org/principles.html)   
   * In fact, put a recurring event in your calendar to read this once every 2 years or so  
 * \[C4\] Understand the similarities and differences between the main Agile frameworks, particularly Scrum, Kanban and XP (Extreme Programming)  
 * \[C6\] Understand how the following concepts are meant to be used (or not) by Scrum, Kanban and XP  
@@ -1008,9 +1008,9 @@ Do not take health advice from me, but do seek out professional advice\!
 
 * “The Art Of Computer Programming” Knuth   
   * One of the most compelling books I’ve ever read. Even the dated stuff is fascinating (like, a lot of book 2 is about algorithms to retrieve data from tape. Still relevant to your work? Unlikely. But awesome to read\!)  
-* “Design Patterns: Elements of Reusable Object-Oriented Software” [https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr\_1\_1\_sspa?crid=29YYD60CPR6OE\&dib=eyJ2IjoiMSJ9.mTRaTOPYqsPcUsGD8aznte8IMQZZiYjv7\_Xwyyi1iS2agVs4KLcx5qwmrKiyIxDiiaA6QbUY3MCBnb28lUrTGOw4rZYq2Lhf6z4JylQnbFuTfD6WMSKZ2izHndzfV-Ky9NmDl7WsksMgVxIlYFmG7iOkspV9gCvaWen0y-NgyAB5h9heo2aiCmVs-15\_vB4oaJk39mlJ\_DXQdKEmTKZAaisgf\_stgMTzEpcnj8Ju6qc.UsxA9CKA92WPXqYKfZEDlzWh4BkKAfrgBstHbML-kUk\&dib\_tag=se\&keywords=design+patterns\&qid=1767328460\&sprefix=design+patterns%2Caps%2C215\&sr=8-1-spons\&sp\_csd=d2lkZ2V0TmFtZT1zcF9hdGY\&psc=1](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1_sspa?crid=29YYD60CPR6OE&dib=eyJ2IjoiMSJ9.mTRaTOPYqsPcUsGD8aznte8IMQZZiYjv7_Xwyyi1iS2agVs4KLcx5qwmrKiyIxDiiaA6QbUY3MCBnb28lUrTGOw4rZYq2Lhf6z4JylQnbFuTfD6WMSKZ2izHndzfV-Ky9NmDl7WsksMgVxIlYFmG7iOkspV9gCvaWen0y-NgyAB5h9heo2aiCmVs-15_vB4oaJk39mlJ_DXQdKEmTKZAaisgf_stgMTzEpcnj8Ju6qc.UsxA9CKA92WPXqYKfZEDlzWh4BkKAfrgBstHbML-kUk&dib_tag=se&keywords=design+patterns&qid=1767328460&sprefix=design+patterns%2Caps%2C215&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)   
-* Effective Java [https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997/ref=sr\_1\_1?crid=11178DR3IEOMC\&dib=eyJ2IjoiMSJ9.aEVmSGt9ra24VmlN-\_LvktnyVdqdspa55\_edw62NBSPexJX\_-zu4CGuVvGA-WJTgQ2NEuFwpTs1vCNaNPigmKYFwxOfL2Z77abywUFer8fk2XQBaIsJ3TfuCVyilEw1INFIXZ-uyCrWncYV83Q2QjQ.LlgcEp5MMhvABIBs6uvqDLVAZJc7NpBD-8whsfwEtas\&dib\_tag=se\&keywords=effective+java+4th+edition\&qid=1767994280\&sprefix=effective+java+%2Caps%2C240\&sr=8-1](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997/ref=sr_1_1?crid=11178DR3IEOMC&dib=eyJ2IjoiMSJ9.aEVmSGt9ra24VmlN-_LvktnyVdqdspa55_edw62NBSPexJX_-zu4CGuVvGA-WJTgQ2NEuFwpTs1vCNaNPigmKYFwxOfL2Z77abywUFer8fk2XQBaIsJ3TfuCVyilEw1INFIXZ-uyCrWncYV83Q2QjQ.LlgcEp5MMhvABIBs6uvqDLVAZJc7NpBD-8whsfwEtas&dib_tag=se&keywords=effective+java+4th+edition&qid=1767994280&sprefix=effective+java+%2Caps%2C240&sr=8-1)   
-* Effective Typescript [https://www.amazon.com/Effective-TypeScript-Specific-Ways-Improve/dp/1098155068/ref=sr\_1\_1?crid=2J0FPORE2IDKS\&dib=eyJ2IjoiMSJ9.3kCLpeeLsIL18j2GgNNS-XQ0btG0lak74ElAxyAWJU9atrjBInzjAoVHOHQQggwqOOHbw6Djc1wzien30a0hkLurIPPrAQA\_-G3ol1DaiFFnCCjDA9pLoETKGH1GpPc6\_9dM5ErmxIKdF7KB\_J9phWeEEIGeN3ZZGW\_2XerYtAHWeoeBTrkS3EYJw\_4PtAQ16BU4A5paTangQDSstA2uVn9LqRBK0hqtc9GW0ifdGbM.-arxdgttWG0hW4tqZW1LsjY3-hkdhin4mTA97yLCl88\&dib\_tag=se\&keywords=effective+typescript\&qid=1767994345\&sprefix=effective+typ%2Caps%2C190\&sr=8-1](https://www.amazon.com/Effective-TypeScript-Specific-Ways-Improve/dp/1098155068/ref=sr_1_1?crid=2J0FPORE2IDKS&dib=eyJ2IjoiMSJ9.3kCLpeeLsIL18j2GgNNS-XQ0btG0lak74ElAxyAWJU9atrjBInzjAoVHOHQQggwqOOHbw6Djc1wzien30a0hkLurIPPrAQA_-G3ol1DaiFFnCCjDA9pLoETKGH1GpPc6_9dM5ErmxIKdF7KB_J9phWeEEIGeN3ZZGW_2XerYtAHWeoeBTrkS3EYJw_4PtAQ16BU4A5paTangQDSstA2uVn9LqRBK0hqtc9GW0ifdGbM.-arxdgttWG0hW4tqZW1LsjY3-hkdhin4mTA97yLCl88&dib_tag=se&keywords=effective+typescript&qid=1767994345&sprefix=effective+typ%2Caps%2C190&sr=8-1)   
+* “Design Patterns: Elements of Reusable Object-Oriented Software” [book](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1_sspa?crid=29YYD60CPR6OE&dib=eyJ2IjoiMSJ9.mTRaTOPYqsPcUsGD8aznte8IMQZZiYjv7_Xwyyi1iS2agVs4KLcx5qwmrKiyIxDiiaA6QbUY3MCBnb28lUrTGOw4rZYq2Lhf6z4JylQnbFuTfD6WMSKZ2izHndzfV-Ky9NmDl7WsksMgVxIlYFmG7iOkspV9gCvaWen0y-NgyAB5h9heo2aiCmVs-15_vB4oaJk39mlJ_DXQdKEmTKZAaisgf_stgMTzEpcnj8Ju6qc.UsxA9CKA92WPXqYKfZEDlzWh4BkKAfrgBstHbML-kUk&dib_tag=se&keywords=design+patterns&qid=1767328460&sprefix=design+patterns%2Caps%2C215&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)   
+* Effective Java [book](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997/ref=sr_1_1?crid=11178DR3IEOMC&dib=eyJ2IjoiMSJ9.aEVmSGt9ra24VmlN-_LvktnyVdqdspa55_edw62NBSPexJX_-zu4CGuVvGA-WJTgQ2NEuFwpTs1vCNaNPigmKYFwxOfL2Z77abywUFer8fk2XQBaIsJ3TfuCVyilEw1INFIXZ-uyCrWncYV83Q2QjQ.LlgcEp5MMhvABIBs6uvqDLVAZJc7NpBD-8whsfwEtas&dib_tag=se&keywords=effective+java+4th+edition&qid=1767994280&sprefix=effective+java+%2Caps%2C240&sr=8-1)   
+* Effective Typescript [book](https://www.amazon.com/Effective-TypeScript-Specific-Ways-Improve/dp/1098155068/ref=sr_1_1?crid=2J0FPORE2IDKS&dib=eyJ2IjoiMSJ9.3kCLpeeLsIL18j2GgNNS-XQ0btG0lak74ElAxyAWJU9atrjBInzjAoVHOHQQggwqOOHbw6Djc1wzien30a0hkLurIPPrAQA_-G3ol1DaiFFnCCjDA9pLoETKGH1GpPc6_9dM5ErmxIKdF7KB_J9phWeEEIGeN3ZZGW_2XerYtAHWeoeBTrkS3EYJw_4PtAQ16BU4A5paTangQDSstA2uVn9LqRBK0hqtc9GW0ifdGbM.-arxdgttWG0hW4tqZW1LsjY3-hkdhin4mTA97yLCl88&dib_tag=se&keywords=effective+typescript&qid=1767994345&sprefix=effective+typ%2Caps%2C190&sr=8-1)   
 * Testing on The Toilet blog
 
 # Contributing
