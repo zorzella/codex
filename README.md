@@ -30,6 +30,52 @@ Peace,
 
 “Z” Zorzella
 
+# Table of Contents
+
+* [The Type System in Programming Languages](#the-type-system-in-programming-languages)
+* [General-Purpose vs Domain-Specific Languages](#general-purpose-vs-domain-specific-languages)
+* [Memory Allocation](#memory-allocation)
+* [Virtual Machines, Interpreters, Runtime Systems](#virtual-machines-interpreters-runtime-systems)
+* [Operators in Code](#operators-in-code)
+* [Integer Numbers in Code](#integer-numbers-in-code)
+* [Floating Point Numbers in Code](#floating-point-numbers-in-code)
+* [Strings in Code](#strings-in-code)
+* [Error Conditions / Error Handling in Code](#error-conditions--error-handling-in-code)
+* [Misc Programming Language Features](#misc-programming-language-features)
+* [Programming Languages Highlights](#programming-languages-highlights)
+* [Design Patterns and anti-patterns in Code](#design-patterns-and-anti-patterns-in-code)
+* [Dependency Injection Frameworks](#dependency-injection-frameworks)
+* [Data Structures](#data-structures)
+* [Concurrency](#concurrency)
+* [Hashing, Error Correction, Compression, Cryptography](#hashing-error-correction-compression-cryptography)
+* [System Design](#system-design)
+* [Identifiers](#identifiers)
+* [Time, Clocks, Calendars](#time-clocks-calendars)
+* [Security](#security)
+* [Serialization](#serialization)
+* [Documentation](#documentation)
+* [Internationalization and Localization (i18n and l10n)](#internationalization-and-localization-i18n-and-l10n)
+* [UI, GUI, Frontend Development](#ui-gui-frontend-development)
+* [Computer Networking](#computer-networking)
+* [The Internet Protocol (IP)](#the-internet-protocol-ip)
+* [HTTP and related protocols](#http-and-related-protocols)
+* [Misc Databases/Datastores Topics](#misc-databasesdatastores-topics)
+* [Relational Data Bases](#relational-data-bases)
+* [Testing](#testing)
+* [Query Languages](#query-languages)
+* [Hardware](#hardware)
+* [Operating Systems](#operating-systems)
+* [IDEs (Integrated Development Environments)](#ides-integrated-development-environments)
+* [Version Control Systems: git](#version-control-systems-git)
+* [Misc Tools for Developers](#misc-tools-for-developers)
+* [Project Management](#project-management)
+* [Build / Deployment / Production](#build--deployment--production)
+* [Artificial Intelligence (AI)](#artificial-intelligence-ai)
+* [Health](#health)
+* [Books and Resources](#books-and-resources)
+* [Contributing](#contributing)
+* [Version History / Changelog](#version-history--changelog)
+
 # The Type System in Programming Languages
 
 Programming language types are one of the most powerful tools to manage complexity in software. The concept looks simple on the surface, but looks are deceiving.
