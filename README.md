@@ -1,6 +1,6 @@
 # Zorzella Codex
 
-# Introduction
+## Introduction
 
 Read the whole introduction, as it gives a guide about how to read the rest of this document.
 
@@ -30,7 +30,7 @@ Peace,
 
 “Z” Zorzella
 
-# Table of Contents
+## Table of Contents
 
 * [The Type System in Programming Languages](#the-type-system-in-programming-languages)
 * [General-Purpose vs Domain-Specific Languages](#general-purpose-vs-domain-specific-languages)
@@ -76,7 +76,7 @@ Peace,
 * [Contributing](#contributing)
 * [Version History / Changelog](#version-history--changelog)
 
-# The Type System in Programming Languages
+## The Type System in Programming Languages
 
 Programming language types are one of the most powerful tools to manage complexity in software. The concept looks simple on the surface, but looks are deceiving.
 
@@ -116,14 +116,14 @@ Programming language types are one of the most powerful tools to manage complexi
 * \[C5\] \[Kotlin/Java\] Understand what Kotlin and Java refer to as sealed classes   
   * Understand how these can be used, say, in a `switch` statement, as a more more powerful `enum` (as they exist in Java/Kotlin)
 
-# General-Purpose vs Domain-Specific Languages
+## General-Purpose vs Domain-Specific Languages
 
 * \[D3\] Understand why languages like C, Java, Python, Rust, C++ are known as General-Purpose Languages (GPLs) while SQL, HTML/CSS, Regex are Domain-Specific (DSLs)  
 * \[D3\] Understand the inexact correlation between declarative and imperative languages and GPLs vs DSLs  
 * \[D4\] Understand the distinction between DSLs and Embedded DSLs  
   * Understand why Embedded DSLs leverage the host language for integration with tooling (e.g. IDEs, static analysis etc) whereas DSLs need bespoke integration
 
-# Memory Allocation
+## Memory Allocation
 
 One of the most important and messiest parts of programming is memory allocation.
 
@@ -143,7 +143,7 @@ One of the most important and messiest parts of programming is memory allocation
 * \[D5\] Understand the difference between a C/C++ pointer and a Java/Kotlin/C\# object reference  
   * Understand what pointer arithmetic is and why most languages other than C/C++ either don’t allow it at all or segregate to sections of code labelled “unsafe”
 
-# Virtual Machines, Interpreters, Runtime Systems
+## Virtual Machines, Interpreters, Runtime Systems
 
 Most programming languages rely on some kind of virtual machine (or interpreter) to run: Java, Kotlin, Python, Javascript/Typescript, C\# etc. Others, like Go and Swift, rely on a “runtime system” that helps with tasks such as memory handling (garbage collection for Go and Automatic Reference Counting for Swift). There’s, in fact, few languages in wide use today that do not have any kind of runtime system, notably C, C++ and Rust.
 
@@ -156,7 +156,7 @@ Most programming languages rely on some kind of virtual machine (or interpreter)
   * Understand how it is most often not as fast as compiled code, particularly at startup time  
 * See also the “memory allocation” section
 
-# Operators in Code
+## Operators in Code
 
 * \[B4\] Understand the logical operators available in the languages you program in  
   * Such as AND, OR, XOR, NOT  
@@ -173,7 +173,7 @@ Most programming languages rely on some kind of virtual machine (or interpreter)
 * \[B7\] Understand why some languages allow for operator overloads (on some operators)  
   * Understand the pitfalls, and ways languages are trying to deal with those
 
-# Integer Numbers in Code
+## Integer Numbers in Code
 
 * \[B4\] Understand the two most common models that programming languages offer to store an integer number in memory: fixed-width primitives such as `int8`, `int16`, `int32`, `int64` or their unsigned counterparts (their names vary in different languages); and arbitrary-size number classes, such as integers in python, or `BigInteger` in Java/Kotlin/C\#  
   * Understand the benefits and downsides of each, and when you’d want to use either  
@@ -192,7 +192,7 @@ Most programming languages rely on some kind of virtual machine (or interpreter)
   * Understand why for signed numbers, negative values always go one more than positive values, e.g. an `int8` has a range from `-128` to `127` (rather than \-127 to 127 or \-128 to 128).  
     * Understand the challenge that is to a function that returns the absolute value of a number (like Java’s `Math.abs`)
 
-# Floating Point Numbers in Code
+## Floating Point Numbers in Code
 
 * \[B5\] Have a deep understanding of the inherent imprecision of floating point numbers  
   * Be able to articulate why it’s always wrong to compare two floats for equality  
@@ -206,7 +206,7 @@ Most programming languages rely on some kind of virtual machine (or interpreter)
   * Understand positive and negative infinities  
   * Understand NaNs
 
-# Strings in Code
+## Strings in Code
 
 Strings (aka pieces of text) are one of the most common types of data a program has to deal with. But they are messy, and different languages handle this messiness in very different ways. 
 
@@ -222,7 +222,7 @@ Strings (aka pieces of text) are one of the most common types of data a program 
 * \[C6\] The variety of ways that strings are modelled points to the fact that there is no way to implement strings that is strictly better than others. Be able to articulate the pros/cons of each choice  
 * \[A7\] Be sure you know how the language you are using models strings in every one of these possible ways, and what are the pitfalls you need to watch for
 
-# Error Conditions / Error Handling in Code
+## Error Conditions / Error Handling in Code
 
 Handling errors is messy, and there are multiple paradigms favored by different languages, and, indeed, it often happens that a single code base uses different paradigms in an inconsistent manner.
 
@@ -233,7 +233,7 @@ Handling errors is messy, and there are multiple paradigms favored by different 
 * \[B5\] Understand why Effective Java’s advice says that exceptions should be used for exceptional cases  
 * \[C5\] Understand how different languages “favor” one method of error over the other
 
-# Misc Programming Language Features
+## Misc Programming Language Features
 
 * \[C6\] Understand object-oriented vs procedural vs functional programing  
 * \[C4\] Understand imperative vs declarative programming  
@@ -260,7 +260,7 @@ Handling errors is messy, and there are multiple paradigms favored by different 
   * What they are and why they are so “special”  
 * \[B8\] Understand why immutability is so valuable
 
-# Programming Languages Highlights
+## Programming Languages Highlights
 
 *“Programming is the closest thing there is to real-life alchemy”* – “Z” Zorzella
 
@@ -276,7 +276,7 @@ Several sections before this delved into language features. Here are some langua
 
 TODO Extract this content into a separate document and restructure it
 
-## Java
+### Java
 
 * JVM has auto-memory allocation with excellent garbage collector  
 * Compiles to intermediate (non-CPU-specific) bytecode, which  
@@ -286,7 +286,7 @@ TODO Extract this content into a separate document and restructure it
 * It has a pretty good type system, including a pretty good generics system; most of the time, casting is not necessary, and, thus, whole classes of bugs are not common
 
 
-## Kotlin
+### Kotlin
 
 * Inherits many of the benefits from Java by virtue of running on the JVM – many of the plusses from the Java section apply  
 * Has even an better type system than Java  
@@ -297,7 +297,7 @@ TODO Extract this content into a separate document and restructure it
 * The language spec is very large (much larger than Java), for better or worse  
 * Better support for “functional-style” programming with lambdas
 
-## C / C++
+### C / C++
 
 C and C++ are quite different languages, but their existence is intertwined, so they are discussed together. Differences will be pointed out.
 
@@ -310,13 +310,13 @@ C and C++ are quite different languages, but their existence is intertwined, so 
 * The language spec for C is small  
 * The language spec for C++ is large 
 
-## Rust
+### Rust
 
 * Rust may finally give us a language that matches the performance you can get with C/C++, but with memory safety (and a much more ergonomic and modern syntax).  
   * Understand how it does that  
   * Understand how big a deal that is
 
-## Python
+### Python
 
 * Excellent scripting language  
 * De facto standard for many domains, including machine learning and mathematics  
@@ -329,7 +329,7 @@ C and C++ are quite different languages, but their existence is intertwined, so 
   * Global Interpreter Lock  
   * This is mostly dealt with by writing the computationally expensive part in another language and integrating with python
 
-## Javascript
+### Javascript
 
 * A very messy language, it has two important things going for it  
   * It runs in (just about) every web browser  
@@ -339,7 +339,7 @@ C and C++ are quite different languages, but their existence is intertwined, so 
   * Simplifies programming a lot  
 * Learn about the “callback” approach to IO and how that is well-suited for a UI language
 
-## Typescript
+### Typescript
 
 * Compiles to javascript  
 * A surprisingly-good uplift to javascript  
@@ -348,7 +348,7 @@ C and C++ are quite different languages, but their existence is intertwined, so 
   * Again, surprisingly-good type system, considering that javascript has a weak and dynamic type system  
 * Since all javascript is valid typescript, makes gradual transition of a javascript code base to typescript possible
 
-## C\#
+### C\#
 
 * “Greatly inspired” by Java  
 * Improved Java in several aspects (like generics)  
@@ -356,17 +356,17 @@ C and C++ are quite different languages, but their existence is intertwined, so 
 * A large language spec  
 * Offers some features that give it a performance edge on Java
 
-## Bash
+### Bash
 
 * Very messy language, but shell scripting is available just about anywhere. So it’s very useful to know how to write simple shell scripts
 
-## Swift
+### Swift
 
 * Compiles to bytecode.  
 * Interesting take on “managed memory allocation” that does not involve garbage collection. Learn about ARC (automatic reference counting)  
   * Attempt to be a viable C replacement without the memory issues: though it is not as fast as C/C++, it is (along with Go) faster than most other “modern” languages
 
-## Go
+### Go
 
 * Like Swift, Go is another attempt at being a viable C replacement, and it compiles to bytecode  
 * But, contrary to Swift, it uses garbage collection  
@@ -376,7 +376,7 @@ C and C++ are quite different languages, but their existence is intertwined, so 
 * Understand why it chose to not have exceptions  
 * Duck-typed
 
-# Design Patterns and anti-patterns in Code
+## Design Patterns and anti-patterns in Code
 
 There are several programming patterns that are used over and over again. Learning about them will help you not only come up with good solutions to problems you face, but also help you get up to speed with an unknown code base.
 
@@ -401,7 +401,7 @@ There are several programming patterns that are used over and over again. Learni
 * \[C8\] For each of these, understand if they are sometimes (or always) considered an anti-pattern, and why, and what are the alternatives   
   * E.g. Singletons vs Dependency Injection
 
-# Dependency Injection Frameworks
+## Dependency Injection Frameworks
 
 Dependency Injections frameworks are very common (for reasons we’ll explore below) and there are some key concepts you should understand. Unfortunately, the nomenclature used by different frameworks is not always consistent, so be warned that things may be called here by a different name than you are used to.
 
@@ -415,7 +415,7 @@ Dependency Injections frameworks are very common (for reasons we’ll explore be
 * \[C5\] Learn about choices of different DI frameworks in your Language  
   * \[Java\] Understand the differences between Guice, Springboot and Dagger
 
-# Data Structures
+## Data Structures
 
 Storing and retrieving data (in memory or not) is a key part of writing software. You will use basics (Lists, Sets, Maps) all the time, and you often use (or reinvent) more advanced ones such as MultiMaps or Persistent Queues. And it is good to know about the existence of super-specialized ones such as Bloom Filters, so you know how to solve problems that might seem intractable otherwise.
 
@@ -468,7 +468,7 @@ Storing and retrieving data (in memory or not) is a key part of writing software
 * \[C8\] For each data structure listed in this section, make sure you can list a few situations (or, for specialized one, at least one situation) where the data structure is ideal, and why, and how it compares with other similar data structures  
   * E.g. when would it be better to use an array-backed list vs a linked list, and the other way around
 
-# Concurrency
+## Concurrency
 
 * \[C8\] Learn about different strategies for concurrent programs, and the terminology around them  
   * OS Threads  
@@ -502,7 +502,7 @@ Storing and retrieving data (in memory or not) is a key part of writing software
   * Mapreduce  
   * Flink
 
-# Hashing, Error Correction, Compression, Cryptography
+## Hashing, Error Correction, Compression, Cryptography
 
 These are four distinct subjects, each important to understand, but with some interesting overlap, so I’ll cover all in this section.
 
@@ -525,7 +525,7 @@ These are four distinct subjects, each important to understand, but with some in
       * Reed-Solomon is also fun to learn  
     * Understand how it’s useful and used in everything from credit card numbers to bank slips to QR codes
 
-# System Design
+## System Design
 
 * Also see the “Design Patterns” section  
 * \[D3\] Understand functional vs non-functional requirements  
@@ -549,7 +549,7 @@ These are four distinct subjects, each important to understand, but with some in
     * User Error Protection  
     * Aesthetics
 
-# Identifiers
+## Identifiers
 
 * \[C4\] Understand the messiness of identifiers. E.g. how tricky it can be have good, unique identifiers  
   * Understand how UUIDs / GUIDs work, but are not adequate to all circumstances  
@@ -560,7 +560,7 @@ These are four distinct subjects, each important to understand, but with some in
     * Understand the role of error correction / checksum  
     * Understand the role of Confusable-free or Unambiguous character set like Crockford's Base32
 
-# Time, Clocks, Calendars
+## Time, Clocks, Calendars
 
 * \[C4\] Understand how messy it is to deal with time, clocks and calendars  
   * Check out these “Falsehoods Programmers Believe About Time” [list](https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca) – try to imagine why each of the statements is a falsehood  
@@ -568,7 +568,7 @@ These are four distinct subjects, each important to understand, but with some in
 * \[C4\] Understand the common ways to represent time in code  
   * E.g. millis since UNIX epoch
 
-# Security
+## Security
 
 * \[C7\] Understand the concepts of authz and authz  
   * How they are different  
@@ -586,11 +586,11 @@ These are four distinct subjects, each important to understand, but with some in
 * Understand vulnerability scanning  
 * Confused deputy
 
-# Serialization
+## Serialization
 
 TODO: this section is under development
 
-# Documentation
+## Documentation
 
 A good software engineer will have to write lots of documentation: readable code, code comments, design docs, etc.
 
@@ -612,7 +612,7 @@ A good software engineer will have to write lots of documentation: readable code
   * Understand the concept of API contract  
   * Understand the concept of preconditions, post-conditions, side effects etc
 
-# Internationalization and Localization (i18n and l10n)
+## Internationalization and Localization (i18n and l10n)
 
 Software that has user-visible content needs to deal with not only being translated but also properly localized.
 
@@ -629,7 +629,7 @@ Software that has user-visible content needs to deal with not only being transla
 * \[C5\] Understand the pitfalls with the different ways to format dates (e.g. YYYY/MM/DD, MM/DD/YY, MM/DD/YYYY, DD/MM/YYYY, DD/MM/YY etc) and how to build a UI that mitigates that  
 * \[C6\] Understand the pitfalls with the different ways to format large numbers and decimal values (e.g. 100,000.00 vs 100.000,00 vs 1,00,000.00) and how to build a UI that mitigates that
 
-# UI, GUI, Frontend Development
+## UI, GUI, Frontend Development
 
 * \[C7\] Learn about the unique challenges of writing UI code  
 * \[C7\] Learn UI-specific patterns such as Model-View-Controller (MVC) and Model-View-Presenter (MVP)  
@@ -644,7 +644,7 @@ Software that has user-visible content needs to deal with not only being transla
 * \[C5\] Learn about WebHooks  
 * Also see the “Security” Section
 
-# Computer Networking
+## Computer Networking
 
 Computers are much more powerful when connected to each other.
 
@@ -689,7 +689,7 @@ Computers are much more powerful when connected to each other.
 * \[C4\] Learn about NAT  
   * Port forwarding
 
-# The Internet Protocol (IP)
+## The Internet Protocol (IP)
 
 To say that the Internet Protocol is massively successful is an understatement. A few niche protocols like Zigbee and Bluetooth (for low-powered devices) do not use IP, but even low-power alternatives like the Thread protocol does. All other general purpose network protocols, from AppleTalk to Novell NetWare are at this point historical curiosities.
 
@@ -706,7 +706,7 @@ It is in your best interest to understand the IP protocol very well.
   * Understand NAT (Network Address Translators)  
     * Understand port forwarding, and why it less common today due to the available alternatives
 
-# HTTP and related protocols
+## HTTP and related protocols
 
 * \[D3\] Understand how you can make a crude HTTP/1.1 request by typing into a telnet session  
   * Understand why TLS/SSL makes this impossible  
@@ -734,7 +734,7 @@ It is in your best interest to understand the IP protocol very well.
   * What problems those choices cause (e.g. the “N+1” issue)  
 * Also see the “UI / Frontend” section
 
-# Misc Databases/Datastores Topics
+## Misc Databases/Datastores Topics
 
 * \[B8\] Learn SQL. It has remained stubbornly relevant for decades, not only in the context of traditional, relational DBs but also in the context of data warehousing  
 * \[C8\] Understand the differences between the different kinds of databases, and terms associated with them:  
@@ -763,7 +763,7 @@ It is in your best interest to understand the IP protocol very well.
   * Why would one want/need to have denormalized data?  
   * Why would one want to try to have normalized data whenever possible?
 
-# Relational Data Bases
+## Relational Data Bases
 
 The following items use concepts and terminology from Postgres. Similar concepts and features exist in other DBs, maybe with different names.
 
@@ -788,7 +788,7 @@ The following items use concepts and terminology from Postgres. Similar concepts
 * \[C7\] Understand query planning and optimization  
   * Understand when you may want to study query plans, how to read them, and how you can use that to optimize your queries
 
-# Testing
+## Testing
 
 * \[C4\] Understand the different kinds of testing doubles and what they are good for (note: testing double nomenclature is used inconsistently, using the one from this ToTT [entry](https://testing.googleblog.com/2013/07/testing-on-toilet-know-your-test-doubles.html))  
   * Mock, Stub, Fake, Dummy, Spy  
@@ -805,7 +805,7 @@ The following items use concepts and terminology from Postgres. Similar concepts
   * Load / Stress tests  
   * Smoke Tests
 
-# Query Languages
+## Query Languages
 
 There’s a few very useful query languages to learn.
 
@@ -820,7 +820,7 @@ There’s a few very useful query languages to learn.
   * Available through its eponymous CLI tool to query JSON  
 * \[D3\] Learn GraphQL. As discussed elsewhere
 
-# Hardware
+## Hardware
 
 This document is focused on software, and it’s easy to take hardware for granted. And most people will work most of the time in a platform-agnostic language. Indeed, even when writing C/C++ programs, unless you work on a compiler, most of the specifics of the platform are abstracted from you. All that said, it’s important to have some understanding of key hardware concepts.
 
@@ -841,7 +841,7 @@ This document is focused on software, and it’s easy to take hardware for grant
   * How long does it take to read 32 bits from cache? From memory? From disk? From the local network? From a cloud provider? From a server halfway across the world?  
 * \[B5\] Understand the difference between throughput and latency when considering data transfer speeds
 
-# Operating Systems
+## Operating Systems
 
 * \[C8\] Be familiar with the different OSs, e.g.  
   * MacOS  
@@ -865,11 +865,11 @@ This document is focused on software, and it’s easy to take hardware for grant
 * \[D7\] Understand how OSs rely on CPU Privilege Levels (Protection Rings) to implement things like preemptive multitasking and security/isolation  
   * Understand User Space vs. Kernel Space
 
-## Filesystems
+### Filesystems
 
 TODO: this section is under development
 
-# IDEs (Integrated Development Environments)
+## IDEs (Integrated Development Environments)
 
 It is important to master tools used to develop software, and the IDE is probably the most important
 
@@ -908,7 +908,7 @@ It is important to master tools used to develop software, and the IDE is probabl
 
 TODO: link to IntelliJ and VSCode
 
-# Version Control Systems: git
+## Version Control Systems: git
 
 At this point, git is king of source control. It’s an incredibly powerful source control system, but with a really clunky CLI. Learn it well.
 
@@ -937,7 +937,7 @@ Note: below, I’ll be using the nomenclature `main` (instead of the old name `m
 * \[C4\] Understand the difference between a merge commit (that has two parents) and a regular commit  
 * \[D3\] Learn about how you can use git bisect to, say, look for the commit that introduces a bug
 
-# Misc Tools for Developers
+## Misc Tools for Developers
 
 As mentioned elsewhere, it is important to learn about and use well your tools. Here’s a few tools worthy of notice (not covered elsewhere in this doc).
 
@@ -947,7 +947,7 @@ As mentioned elsewhere, it is important to learn about and use well your tools. 
 * \[C5\] \[MacOs\] Use homebrew. You can get your Mac Terminal (which I would use iTerm, really) to be a much more capable CLI  
 * \[C7\] \[Windows\] WSL. Ok, so Windows is not POSIX-compliant, but WSL (despite its limitations) is a pretty awesome way to bring a lot of the Linux power to Windows
 
-# Project Management
+## Project Management
 
 Software development is a team activity that takes place over extended periods of time. It is important to understand the principles of software project management, even if you are not the one in charge.
 
@@ -958,7 +958,7 @@ Software development is a team activity that takes place over extended periods o
 * \[C6\] Understand the pre-Agile history of project management, particularly the Waterfall model  
   * Understand how Waterfall is still practiced in a handful of high-stake niche applications (such as aerospace, medical devices)
 
-## Agile
+### Agile
 
 See the section on “Project Management” above. Agile was invented as a reaction to the issues of Waterfall, which was the prevalent way to develop before.
 
@@ -975,7 +975,7 @@ See the section on “Project Management” above. Agile was invented as a react
   * Understand the term “cargo cult”, and why it is used to describe this  
   * Afterwards, go back and re-learn how these frameworks and their concepts are actually supposed to be used. Keep in mind that you may have only ever encountered badly-implemented Agile, so even if you think you are familiar with all these, you need to find a good resource to learn “proper Agile”. I am reluctant to recommend something I haven’t read, but I’ve heard that one of the best is "Extreme Programming Explained: Embrace Change" by Kent Beck – which, though it focuses on XP, lays out the foundation for Agile (fwiw, XP is considered the most radical/pure Agile)
 
-# Build / Deployment / Production
+## Build / Deployment / Production
 
 TODO: this section is under development
 
@@ -985,7 +985,7 @@ TODO: this section is under development
 * Observability  
 * Monitoring
 
-# Artificial Intelligence (AI)
+## Artificial Intelligence (AI)
 
 Love it or hate it (or both) AI has already become an important part of being a software developer. There are three “hats” you may wear while interacting with AI:
 
@@ -995,7 +995,7 @@ Love it or hate it (or both) AI has already become an important part of being a 
 
 These are quite distinct, so let’s discuss each one separately
 
-## Artificial Intelligence: As a User
+### Artificial Intelligence: As a User
 
 * \[B4\] Learn how to use an LLM chatbot as a assist for learning and having a dialogue  
   * Not for the blindly trusting  
@@ -1005,13 +1005,13 @@ These are quite distinct, so let’s discuss each one separately
 * \[B4\] Understand how to use AI as your augmenter, not replacer  
   * If you just blindly trust it, you are essentially saying it can replace you
 
-## Artificial Intelligence: As an Integrator
+### Artificial Intelligence: As an Integrator
 
 * \[C4\] Understand how to do good prompt engineering to get the results that you want more often than not  
 * \[C4\] Understand the limits of what to expect from LLMs  
   * That hallucinations are inevitable
 
-## Artificial Intelligence: As an AI Developer
+### Artificial Intelligence: As an AI Developer
 
 * \[B4\] Understand why games are the ideal way to train a neural network  
 * \[B4\] Understand how things have been gamified to make them more amenable to be trained on  
@@ -1029,7 +1029,7 @@ These are quite distinct, so let’s discuss each one separately
   * Training parameters  
   * GPU / TPU
 
-# Health
+## Health
 
 This may seem like a weird topic for my document, but hear me out: to be a seasoned software engineer, you need to be able to keep doing this work for decades, giving time for your intuition to develop and to gain more experience.
 
@@ -1050,7 +1050,7 @@ Do not take health advice from me, but do seek out professional advice\!
     * Figure out ways to incorporate physical activity in your workday  
   * Do all these before you develop a health problem; it’s much harder after the problem manifests
 
-# Books and Resources
+## Books and Resources
 
 * “The Art Of Computer Programming” Knuth   
   * One of the most compelling books I’ve ever read. Even the dated stuff is fascinating (like, a lot of book 2 is about algorithms to retrieve data from tape. Still relevant to your work? Unlikely. But awesome to read\!)  
@@ -1059,7 +1059,7 @@ Do not take health advice from me, but do seek out professional advice\!
 * Effective Typescript [book](https://www.amazon.com/Effective-TypeScript-Specific-Ways-Improve/dp/1098155068/ref=sr_1_1?crid=2J0FPORE2IDKS&dib=eyJ2IjoiMSJ9.3kCLpeeLsIL18j2GgNNS-XQ0btG0lak74ElAxyAWJU9atrjBInzjAoVHOHQQggwqOOHbw6Djc1wzien30a0hkLurIPPrAQA_-G3ol1DaiFFnCCjDA9pLoETKGH1GpPc6_9dM5ErmxIKdF7KB_J9phWeEEIGeN3ZZGW_2XerYtAHWeoeBTrkS3EYJw_4PtAQ16BU4A5paTangQDSstA2uVn9LqRBK0hqtc9GW0ifdGbM.-arxdgttWG0hW4tqZW1LsjY3-hkdhin4mTA97yLCl88&dib_tag=se&keywords=effective+typescript&qid=1767994345&sprefix=effective+typ%2Caps%2C190&sr=8-1)   
 * Testing on The Toilet blog
 
-# Contributing
+## Contributing
 
 This document is large and ambitious, and I expect it to need corrections and revisions. I’m not an expert in every language and every subject, and – despite my best efforts to check that all the information is correct – there’s a lot of opportunity for error, and I’m happy to get input. Depending on what kind of change you want to propose, follow the appropriate option below:
 
@@ -1070,6 +1070,6 @@ This document is large and ambitious, and I expect it to need corrections and re
 
 For any of these, keep PRs as small as reasonable: do not fix more than one thing, and keep each change constrained to a small section of the doc, if at all possible.
 
-# Version History / Changelog
+## Version History / Changelog
 
 2026 Jan 10 – Version 1 (by Zorzella)  
