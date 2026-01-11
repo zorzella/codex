@@ -102,10 +102,11 @@ Peace,
 37. [Project Management](#37-project-management)
 38. [Build / Deployment / Production](#38-build--deployment--production)
 39. [Artificial Intelligence (AI)](#39-artificial-intelligence-ai)
-40. [Health](#40-health)
-41. [Books and Resources](#41-books-and-resources)
-42. [Contributing](#42-contributing)
-43. [Version History / Changelog](#43-version-history--changelog)
+40. [Experience and Intuition](#40-experience-and-intuition)
+41. [Health](#41-health)
+42. [Books and Resources](#books-and-resources)
+43. [Contributing](#contributing)
+44. [Version History / Changelog](#version-history--changelog)
 
 ## 1. The Type System in Programming Languages
 
@@ -1123,6 +1124,8 @@ and features exist in other DBs, maybe with different names.
   - Integration Tests
   - Load / Stress tests
   - Smoke Tests
+- \[C4\] Understand the principle of adding test coverage every time you have an
+  incident in production.
 
 ## 31. Query Languages
 
@@ -1449,7 +1452,37 @@ These are quite distinct, so let’s discuss each one separately
   - Training parameters
   - GPU / TPU
 
-## 40. Health
+## 40. Experience and intuition
+
+There is nothing that replaces experience, which builds intuition for what is
+right or wrong. You need years of practice to gain these skills, but I present
+here some ideas on how to use some opportunities that may be available to you to
+do so.
+
+- Fix flaky tests. It is common for projects to end up with flaky tests. It is
+  also common to fix that by adding a blind "retry a few times". Find the flaky
+  tests in your project, and fix the flakiness. You will gain experience chasing
+  race conditions and you will gain more understanding of your code base. And
+  you will make your build faster. And you may find that the flakiness is caused
+  by an actual problem with your production code.
+- Chase the quirky behavior. It often happens there is some quirky "mostly
+  harmless" behavior with your product: an occasional unexpected flicker in your
+  UI; a message that sometimes seems to come doubled; a stutter in the audio;
+  etc. Just like what is described in the bullet on flaky tests, chase this
+  problem. You may end up going through parts of the code that you rarely get to
+  see.
+- Fix stack traces. Look at your application's logs for stack traces (well, if
+  your language has exceptions/stack traces). Fix them. Some of the same
+  rationale from the past bullet points apply.
+- Run your application in a profiler. Find and understand your application's
+  performance bottlenecks. Find where the application is allocating most memory.
+  If your application CPU-bound? Is it IO-bound? Is it memory constrained? Is it
+  spending a lot of time doing garbage collection? You will learn a lot about
+  your code or the framework/language it's built on. And you will very likely
+  find something worth fixing and/or come up with ideas on how to improve your
+  application's design.
+
+## 41. Health
 
 This may seem like a weird topic for my document, but hear me out: to be a
 seasoned software engineer, you need to be able to keep doing this work for
@@ -1488,7 +1521,7 @@ Do not take health advice from me, but do seek out professional advice\!
   - Do all these before you develop a health problem; it’s much harder after the
     problem manifests
 
-## 41. Books and Resources
+## Books and Resources
 
 - “The Art Of Computer Programming” Knuth
   - One of the most compelling books I’ve ever read. Even the dated stuff is
@@ -1502,8 +1535,11 @@ Do not take health advice from me, but do seek out professional advice\!
   [book](https://www.amazon.com/Effective-TypeScript-Specific-Ways-Improve/dp/1098155068/ref=sr_1_1?crid=2J0FPORE2IDKS&dib=eyJ2IjoiMSJ9.3kCLpeeLsIL18j2GgNNS-XQ0btG0lak74ElAxyAWJU9atrjBInzjAoVHOHQQggwqOOHbw6Djc1wzien30a0hkLurIPPrAQA_-G3ol1DaiFFnCCjDA9pLoETKGH1GpPc6_9dM5ErmxIKdF7KB_J9phWeEEIGeN3ZZGW_2XerYtAHWeoeBTrkS3EYJw_4PtAQ16BU4A5paTangQDSstA2uVn9LqRBK0hqtc9GW0ifdGbM.-arxdgttWG0hW4tqZW1LsjY3-hkdhin4mTA97yLCl88&dib_tag=se&keywords=effective+typescript&qid=1767994345&sprefix=effective+typ%2Caps%2C190&sr=8-1)
 - Testing on The Toilet
   [blog](https://testing.googleblog.com/2007/01/introducing-testing-on-toilet.html)
+- Your co-workers (hopefully). Much of what I learned was from my co-workers, in
+  code reviews, in code pairing sessions, brainstorming designs etc. Make use of
+  your opportunities!
 
-## 42. Contributing
+## Contributing
 
 This document is large and ambitious, and I expect it to need corrections and
 revisions. I’m not an expert in every language and every subject, and – despite
@@ -1528,6 +1564,7 @@ For any of these, keep PRs as small as reasonable: do not fix more than one
 thing, and keep each change constrained to a small section of the doc, if at all
 possible.
 
-## 43. Version History / Changelog
+## Version History / Changelog
 
-2026 Jan 10 – Version 1 (by Zorzella)
+2026 Jan 10 – Version 1 (by Zorzella) 2026 Jan 11 – Added "Experience and
+intuition" and other misc changes (by Zorzella)
