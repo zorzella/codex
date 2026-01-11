@@ -1500,7 +1500,8 @@ Do not take health advice from me, but do seek out professional advice\!
   [book](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997/ref=sr_1_1?crid=11178DR3IEOMC&dib=eyJ2IjoiMSJ9.aEVmSGt9ra24VmlN-_LvktnyVdqdspa55_edw62NBSPexJX_-zu4CGuVvGA-WJTgQ2NEuFwpTs1vCNaNPigmKYFwxOfL2Z77abywUFer8fk2XQBaIsJ3TfuCVyilEw1INFIXZ-uyCrWncYV83Q2QjQ.LlgcEp5MMhvABIBs6uvqDLVAZJc7NpBD-8whsfwEtas&dib_tag=se&keywords=effective+java+4th+edition&qid=1767994280&sprefix=effective+java+%2Caps%2C240&sr=8-1)
 - Effective TypeScript
   [book](https://www.amazon.com/Effective-TypeScript-Specific-Ways-Improve/dp/1098155068/ref=sr_1_1?crid=2J0FPORE2IDKS&dib=eyJ2IjoiMSJ9.3kCLpeeLsIL18j2GgNNS-XQ0btG0lak74ElAxyAWJU9atrjBInzjAoVHOHQQggwqOOHbw6Djc1wzien30a0hkLurIPPrAQA_-G3ol1DaiFFnCCjDA9pLoETKGH1GpPc6_9dM5ErmxIKdF7KB_J9phWeEEIGeN3ZZGW_2XerYtAHWeoeBTrkS3EYJw_4PtAQ16BU4A5paTangQDSstA2uVn9LqRBK0hqtc9GW0ifdGbM.-arxdgttWG0hW4tqZW1LsjY3-hkdhin4mTA97yLCl88&dib_tag=se&keywords=effective+typescript&qid=1767994345&sprefix=effective+typ%2Caps%2C190&sr=8-1)
-- Testing on The Toilet blog
+- Testing on The Toilet
+  [blog](https://testing.googleblog.com/2007/01/introducing-testing-on-toilet.html)
 
 ## 42. Contributing
 
