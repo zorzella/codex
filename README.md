@@ -47,8 +47,8 @@ it is not a beginner’s guide\! And note that it’d take years of concerted ef
 to learn everything that is listed here.
 
 Note: different languages or tooling often have different names for the same
-things. E.g. what Java calls a “Map”, C# calls a “Dictionary”. I will often
-call out the different names; or, sometimes I’ll say something like “learn about
+things. E.g. what Java calls a “Map”, C# calls a “Dictionary”. I will often call
+out the different names; or, sometimes I’ll say something like “learn about
 synchronized blocks (as Java calls them)” – meaning that other languages will
 likely have something like Java’s “synchronized” keyword, but may call these
 something else (e.g. in this case, in C\# this is done with “lock”). Finally, I
@@ -168,8 +168,8 @@ deceiving.
   `sealed` classes (which means something different in Java, see future point)
 - \[C5\] \[Kotlin/Java\] Understand what Kotlin and Java refer to as sealed
   classes
-  - Understand how these can be used, say, in a `switch` statement, as a
-    more powerful `enum` (as they exist in Java/Kotlin)
+  - Understand how these can be used, say, in a `switch` statement, as a more
+    powerful `enum` (as they exist in Java/Kotlin)
 
 ## 2. General-Purpose vs Domain-Specific Languages
 
@@ -357,14 +357,14 @@ paradigms in an inconsistent manner.
   - Understand that reflection is a runtime concept
     - But also understand how introspection can do something similar to
       reflection, but at compile-time
-- \[C5\] Understand the difference between high-level languages (like  C#, Java
+- \[C5\] Understand the difference between high-level languages (like C#, Java
   and most others) and lower-level languages (like C as assembler)
 - \[C7\] Understand the philosophies around languages “surface size”
   - Understand the advantages of “small” languages, like Go and C. E.g.
     - Easy to learn
     - Easy to implement a parser/compiler
     - Fewer ways to do the same thing
-  - Understand the advantages of “large” languages like  C# and Kotlin. E.g.
+  - Understand the advantages of “large” languages like C# and Kotlin. E.g.
     - “First class” support for more use cases
     - can make the code much more expressive
 - \[C7\] Understand the different language philosophies around
@@ -498,7 +498,7 @@ they are discussed together. Differences will be pointed out.
 - Since all JavaScript is valid TypeScript, makes gradual transition of a
   JavaScript code base to TypeScript possible
 
-###  C#
+### C#
 
 - “Greatly inspired” by Java
 - Improved Java in several aspects (like generics)
@@ -564,7 +564,9 @@ problems you face, but also help you get up to speed with an unknown code base.
     - Understand Scope Mismatch (aka Captive Dependency) the issue with object
       lifetime management (“scopes”) where you should not inject something that
       has a shorter lifetime than the injectee
-    - See also [Dependency Injection Frameworks](#13-dependency-injection-frameworks) section
+    - See also
+      [Dependency Injection Frameworks](#13-dependency-injection-frameworks)
+      section
 - \[C8\] For each of these, understand if they are sometimes (or always)
   considered an anti-pattern, and why, and what are the alternatives
   - E.g. Singletons vs Dependency Injection
@@ -576,7 +578,8 @@ below) and there are some key concepts you should understand. Unfortunately, the
 nomenclature used by different frameworks is not always consistent, so be warned
 that things may be called here by a different name than you are used to.
 
-- See also the “DI” bullet in the [Design Patterns](#12-design-patterns-and-anti-patterns-in-code) section
+- See also the “DI” bullet in the
+  [Design Patterns](#12-design-patterns-and-anti-patterns-in-code) section
 - \[C5\] Understand the difference between DI and a DI framework
 - \[C5\] Understand why it’s common to want to use a DI framework when using DI
   - E.g. it saves a lot of boilerplate
@@ -723,7 +726,8 @@ interesting overlap, so I’ll cover all in this section.
 
 ## 17. System Design
 
-- See also the [Design Patterns](#12-design-patterns-and-anti-patterns-in-code) section
+- See also the [Design Patterns](#12-design-patterns-and-anti-patterns-in-code)
+  section
 - \[D3\] Understand functional vs non-functional requirements
 - \[C4\] Understand the value of a good API
   - Excellent resource: Josh Bloch’s excellent “How To Design A Good API and Why
@@ -749,11 +753,12 @@ interesting overlap, so I’ll cover all in this section.
 
 ## 18. Identifiers
 
-- \[C4\] Understand the messiness of identifiers. E.g. how tricky it can be to have
-  good, unique identifiers
+- \[C4\] Understand the messiness of identifiers. E.g. how tricky it can be to
+  have good, unique identifiers
   - Understand how UUIDs / GUIDs work, but are not adequate to all circumstances
   - Likewise for cryptographic hashes
-  - Likewise for timestamps (see also the [Time, Clocks, Calendars](#19-time-clocks-calendars) section)
+  - Likewise for timestamps (see also the
+    [Time, Clocks, Calendars](#19-time-clocks-calendars) section)
   - Understand the unique issues IDs that need to be used by end users
     - E.g. a Bank Account or a gift card redemption code
     - Understand the role of error correction / checksum
@@ -791,7 +796,28 @@ interesting overlap, so I’ll cover all in this section.
 
 ## 21. Serialization
 
-TODO: this section is under development
+Serialization / deserialization is used to transmit in-memory data from one
+place to another, or to store it for future use. In fact, storing for future use
+can also be thought of a transmitting data from the past to the future.
+
+- \[C5\] Understand the concept of serialization/deserialization
+- \[C5\] Understand different ways to implement this in code
+  - That it can be achieved with manually written code
+  - That is can be (and so often is) achieved using some library/tooling
+  - That it can be implement to do the serialization/deserialization heavy
+    lifting through generated code or using reflection
+    - and what are the advantages/disadvantages of each
+- \[C5\] Understand the different common serialization protocols/formats
+  - protobufs (gRPC)
+  - JSON
+  - XML
+  - others
+- \[C6\] Understand the need to make serialization/deserialization backward
+  compatible and forward compatible as well
+  - Understand the different strategies used by the different common
+    protocols/formats to achieve this
+- See also the [HTTP and related protocols](#27-http-and-related-protocols)
+  section
 
 ## 22. Documentation
 
@@ -982,6 +1008,7 @@ It is in your best interest to understand the IP protocol very well.
     have more control)
   - What problems those choices cause (e.g. the “N+1” issue)
 - See also the [UI, Gui. Frontend](#24-ui-gui-frontend-development) section
+- See also the [Serialization](#21-serialization) section
 
 ## 28. Misc Databases/Datastores Topics
 
@@ -1173,9 +1200,9 @@ probably the most important
   - Extract an interface/superclass (or the opposite)
   - Add/remove explicit type declarations (say to local variables)
 - \[B4\] Learn how to use your IDE to navigate your repository. You want to
-  efficiently navigate code, while modifying it as well as while you are
-  trying to understand it. Here are some things you want to be able to do
-  efficiently (including without using the mouse):
+  efficiently navigate code, while modifying it as well as while you are trying
+  to understand it. Here are some things you want to be able to do efficiently
+  (including without using the mouse):
   - Go to a file by name. The same for a class and for a function/method
   - Find a string in your codebase
   - Go to the definition of a method/variable/parameter
