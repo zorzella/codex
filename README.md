@@ -161,12 +161,12 @@ Most programming languages rely on some kind of virtual machine (or interpreter)
 * \[B4\] Understand the logical operators available in the languages you program in  
   * Such as AND, OR, XOR, NOT  
   * Understand “short-circuit” evaluation  
-    * E.g. why it’s ok in Java/C\# to say `a \!= null && a.b() \== 10`  
+    * E.g. why it’s ok in Java/C\# to say `a != null && a.b() == 10`  
 * \[C4\] Understand the bitwise operators available in the languages you program in  
   * The same AND, OR, XOR and NOT but that operate on the bits  
   * Understand when to use these vs the logical operators  
 * \[B4\] Understand the arithmetic operators available in the languages you program in  
-  * \+ \- \* / % \*\* etc  
+  * `+ - * / % **` etc  
   * Understand why diving by 8 is cheaper than dividing by 10  
 * \[B6\] Understand what other operators exist in the languages you program in  
 * \[B7\] Understand why some languages forbid operator overloads  
@@ -180,16 +180,16 @@ Most programming languages rely on some kind of virtual machine (or interpreter)
   * Understand that, even when using arbitrary-size number classes, they still need to rely on fixed-width number for math, and why  
 * \[C6\] Understand how computers (and hardware) handle math  
   * Be able to put in approximate order from least to most expensive, the following:  
-    * 50 \* 2  
-    * 50 / 3 (integer math, no remainder)  
-    * 50^7  
-    * 50 % 3  
-    * 50 \+ 2  
-    * 50 \- 2  
+    * `50 * 2`  
+    * `50 / 3` (integer math, no remainder)  
+    * `50^7`  
+    * `50 % 3`  
+    * `50 + 2`  
+    * `50 - 2` 
 * \[B6\] Understand fixed-width number in-memory representation  
-  * Understand 2’s complement for signed numbers  
-  * Understand the challenges in converting from, say an int16 to an int32 and the other way around  
-  * Understand why for signed numbers, negative values always go one more than positive values, e.g. an `int8` has a range from `-128` to `127` (rather than \-127 to 127 or \-128 to 128).  
+  * Understand 2’s complement for signed numbers
+  * Understand the challenges in converting from, say an int16 to an int32 and the other way around
+  * Understand why for signed numbers, negative values always go one more than positive values, e.g. an `int8` has a range from `-128` to `127` (rather than `-127` to `127` or `-128` to `128`).
     * Understand the challenge that is to a function that returns the absolute value of a number (like Java’s `Math.abs`)
 
 ## 7. Floating Point Numbers in Code
@@ -204,7 +204,7 @@ Most programming languages rely on some kind of virtual machine (or interpreter)
   * Understand that this is given “almost for free” by modern hardware  
   * Understand that, contrary to integers, there can never be an overflow from large positive numbers to negative numbers  
   * Understand positive and negative infinities  
-  * Understand NaNs
+  * Understand `NaN`s
 
 ## 8. Strings in Code
 
@@ -266,11 +266,11 @@ Handling errors is messy, and there are multiple paradigms favored by different 
 
 Needless to say, programming languages are the most important element in a programmer’s career. A good programmer knows their primary language(s) really well, but they also know other languages.
 
-What a programmer can do is shaped and limited by the language they use to program – e.g. if a language has terrible support for threading, threading will not be used much; if a language has clunky syntax for lambda functions, they will be used less; etc.
+What a programmer can do is shaped and limited by the language they use to program – e.g. if a language has terrible support for threading, threading will not be used much; if a language has clunky syntax for lambda functions, they will be used less; etc.
 
-It’s very useful to learn multiple languages, or to at least learn about them. Not only you’ll be better prepared for when you need to read/write a snippet of code in a language other than your primary one, but this will also enable you to think in different paradigms, and appreciate strengths and weaknesses of the language you end up using most.
+It’s very useful to learn multiple languages, or to at least learn about them. Not only you’ll be better prepared for when you need to read/write a snippet of code in a language other than your primary one, but this will also enable you to think in different paradigms, and appreciate strengths and weaknesses of the language you end up using the most.
 
-You’ll also be able to choose an appropriate language to solve a particular problem – you must be able to justify when you would want to use each language over the others.
+You’ll also be able to choose an appropriate language to solve a particular problem – you must be able to justify when you would want to use each language over the others.
 
 Several sections before this delved into language features. Here are some languages I find useful, and some brief thoughts about each of them, particularly some of their “uniquesses”, for better or worse, building on the terminology presented before.
 
@@ -288,7 +288,7 @@ TODO Extract this content into a separate document and restructure it
 
 ### Kotlin
 
-* Inherits many of the benefits from Java by virtue of running on the JVM – many of the plusses from the Java section apply  
+* Inherits many of the benefits from Java by virtue of running on the JVM – many of the plusses from the Java section apply  
 * Has even an better type system than Java  
   * This is particularly true about nullable types, which are built directly in the type system  
   * sealed class hierarchies  
