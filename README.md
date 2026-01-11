@@ -38,7 +38,7 @@ A to E and mean this:
 5. Very niche topics and/or a mere curiosity
 
 Though the document often clusters related topics close to each other, the
-content does not need to be consumed linearly – feel free to jump around between
+content does not need to be consumed linearly – feel free to jump around between
 sections and items in the sections, seeking what is most interesting and
 relevant to you at the moment.
 
@@ -47,7 +47,7 @@ it is not a beginner’s guide\! And note that it’d take years of concerted ef
 to learn everything that is listed here.
 
 Note: different languages or tooling often have different names for the same
-things. E.g. what Java calls a “Map”, C\# calls a “Dictionary”. I will often
+things. E.g. what Java calls a “Map”, C# calls a “Dictionary”. I will often
 call out the different names; or, sometimes I’ll say something like “learn about
 synchronized blocks (as Java calls them)” – meaning that other languages will
 likely have something like Java’s “synchronized” keyword, but may call these
@@ -63,49 +63,49 @@ Peace,
 
 ## Table of Contents
 
-1. [The Type System in Programming Languages](#the-type-system-in-programming-languages)
-1. [General-Purpose vs Domain-Specific Languages](#general-purpose-vs-domain-specific-languages)
-1. [Memory Allocation](#memory-allocation)
-1. [Virtual Machines, Interpreters, Runtime Systems](#virtual-machines-interpreters-runtime-systems)
-1. [Operators in Code](#operators-in-code)
-1. [Integer Numbers in Code](#integer-numbers-in-code)
-1. [Floating Point Numbers in Code](#floating-point-numbers-in-code)
-1. [Strings in Code](#strings-in-code)
-1. [Error Conditions / Error Handling in Code](#error-conditions--error-handling-in-code)
-1. [Misc Programming Language Features](#misc-programming-language-features)
-1. [Programming Languages Highlights](#programming-languages-highlights)
-1. [Design Patterns and anti-patterns in Code](#design-patterns-and-anti-patterns-in-code)
-1. [Dependency Injection Frameworks](#dependency-injection-frameworks)
-1. [Data Structures](#data-structures)
-1. [Concurrency](#concurrency)
-1. [Hashing, Error Correction, Compression, Cryptography](#hashing-error-correction-compression-cryptography)
-1. [System Design](#system-design)
-1. [Identifiers](#identifiers)
-1. [Time, Clocks, Calendars](#time-clocks-calendars)
-1. [Security](#security)
-1. [Serialization](#serialization)
-1. [Documentation](#documentation)
-1. [Internationalization and Localization (i18n and l10n)](#internationalization-and-localization-i18n-and-l10n)
-1. [UI, GUI, Frontend Development](#ui-gui-frontend-development)
-1. [Computer Networking](#computer-networking)
-1. [The Internet Protocol (IP)](#the-internet-protocol-ip)
-1. [HTTP and related protocols](#http-and-related-protocols)
-1. [Misc Databases/Datastores Topics](#misc-databasesdatastores-topics)
-1. [Relational Data Bases](#relational-data-bases)
-1. [Testing](#testing)
-1. [Query Languages](#query-languages)
-1. [Hardware](#hardware)
-1. [Operating Systems](#operating-systems)
-1. [IDEs (Integrated Development Environments)](#ides-integrated-development-environments)
-1. [Version Control Systems: git](#version-control-systems-git)
-1. [Misc Tools for Developers](#misc-tools-for-developers)
-1. [Project Management](#project-management)
-1. [Build / Deployment / Production](#build--deployment--production)
-1. [Artificial Intelligence (AI)](#artificial-intelligence-ai)
-1. [Health](#health)
-1. [Books and Resources](#books-and-resources)
-1. [Contributing](#contributing)
-1. [Version History / Changelog](#version-history--changelog)
+1. [The Type System in Programming Languages](#1-the-type-system-in-programming-languages)
+2. [General-Purpose vs Domain-Specific Languages](#2-general-purpose-vs-domain-specific-languages)
+3. [Memory Allocation](#3-memory-allocation)
+4. [Virtual Machines, Interpreters, Runtime Systems](#4-virtual-machines-interpreters-runtime-systems)
+5. [Operators in Code](#5-operators-in-code)
+6. [Integer Numbers in Code](#6-integer-numbers-in-code)
+7. [Floating Point Numbers in Code](#7-floating-point-numbers-in-code)
+8. [Strings in Code](#8-strings-in-code)
+9. [Error Conditions / Error Handling in Code](#9-error-conditions--error-handling-in-code)
+10. [Misc Programming Language Features](#10-misc-programming-language-features)
+11. [Programming Languages Highlights](#11-programming-languages-highlights)
+12. [Design Patterns and anti-patterns in Code](#12-design-patterns-and-anti-patterns-in-code)
+13. [Dependency Injection Frameworks](#13-dependency-injection-frameworks)
+14. [Data Structures](#14-data-structures)
+15. [Concurrency](#15-concurrency)
+16. [Hashing, Error Correction, Compression, Cryptography](#16-hashing-error-correction-compression-cryptography)
+17. [System Design](#17-system-design)
+18. [Identifiers](#18-identifiers)
+19. [Time, Clocks, Calendars](#19-time-clocks-calendars)
+20. [Security](#20-security)
+21. [Serialization](#21-serialization)
+22. [Documentation](#22-documentation)
+23. [Internationalization and Localization (i18n and l10n)](#23-internationalization-and-localization-i18n-and-l10n)
+24. [UI, GUI, Frontend Development](#24-ui-gui-frontend-development)
+25. [Computer Networking](#25-computer-networking)
+26. [The Internet Protocol (IP)](#26-the-internet-protocol-ip)
+27. [HTTP and related protocols](#27-http-and-related-protocols)
+28. [Misc Databases/Datastores Topics](#28-misc-databasesdatastores-topics)
+29. [Relational Data Bases](#29-relational-data-bases)
+30. [Testing](#30-testing)
+31. [Query Languages](#31-query-languages)
+32. [Hardware](#32-hardware)
+33. [Operating Systems](#33-operating-systems)
+34. [IDEs (Integrated Development Environments)](#34-ides-integrated-development-environments)
+35. [Version Control Systems: git](#35-version-control-systems-git)
+36. [Misc Tools for Developers](#36-misc-tools-for-developers)
+37. [Project Management](#37-project-management)
+38. [Build / Deployment / Production](#38-build--deployment--production)
+39. [Artificial Intelligence (AI)](#39-artificial-intelligence-ai)
+40. [Health](#40-health)
+41. [Books and Resources](#41-books-and-resources)
+42. [Contributing](#42-contributing)
+43. [Version History / Changelog](#43-version-history--changelog)
 
 ## 1. The Type System in Programming Languages
 
@@ -127,16 +127,16 @@ deceiving.
 - \[B7\] Understand the pros and cons of statically-typed languages
 - \[B7\] Understand the pros and cons of dynamically-typed languages
   - Understand how dynamically-typed languages can still leverage types in
-    codebase (e.g. typescript of python type hints)
+    codebase (e.g. TypeScript or Python type hints)
   - Understand why even dynamically-typed languages often end up with a type
-    system (say typescript for javascript and type hints for python 3.5+)
+    system (say TypeScript for JavaScript and type hints for python 3.5+)
   - Understand particularly the things that you can do with a dynamically-typed
     language that you can’t with a statically-typed one, as well as the
     downsides
 - \[C6\] Understand co-variance and contra-variance
 - \[C6\] Understand Liskov’s Substitution Principle
 - \[C8\] Understand type parameterization
-  - Understand Generics (as seen in Java, C\# etc)
+  - Understand Generics (as seen in Java, C# etc)
     - Understand Java type erasure
     - Understand C\# reification of parameter types
     - Understand the limited way you can use reified types in Kotlin
@@ -151,7 +151,7 @@ deceiving.
       Kotin’s and C\#’s `in` and `out` type parameters
     - Understand the upsides and downsides of use-site variance, like Java’s
       `? extends` and `? super` type parameters
-    - Understand other kinds of variance, like Typescript’s “automatic
+    - Understand other kinds of variance, like TypeScript’s “automatic
       variance”, and languages that don’t have good support for variance
 - \[C4\] Understand duck typing
   - Understand the pros and cons of duck typing
@@ -162,13 +162,13 @@ deceiving.
 - \[D4\] Understand the different ways that languages support `enum`s
   - Covering the span from C’s enum that is just a numeric constant to
     Java/Kotlin where they are actual classes, to Rust/Swift where they are even
-    more capable then Java/Kotlin
+    more capable than Java/Kotlin
 - \[C4\] Understand the different ways languages refer to “this class is not
   extensible”, e.g. Java’s `final` keyword whereas in C\# they are called
   `sealed` classes (which means something different in Java, see future point)
 - \[C5\] \[Kotlin/Java\] Understand what Kotlin and Java refer to as sealed
   classes
-  - Understand how these can be used, say, in a `switch` statement, as a more
+  - Understand how these can be used, say, in a `switch` statement, as a
     more powerful `enum` (as they exist in Java/Kotlin)
 
 ## 2. General-Purpose vs Domain-Specific Languages
@@ -216,7 +216,7 @@ allocation.
 ## 4. Virtual Machines, Interpreters, Runtime Systems
 
 Most programming languages rely on some kind of virtual machine (or interpreter)
-to run: Java, Kotlin, Python, Javascript/Typescript, C\# etc. Others, like Go
+to run: Java, Kotlin, Python, JavaScript/TypeScript, C\# etc. Others, like Go
 and Swift, rely on a “runtime system” that helps with tasks such as memory
 handling (garbage collection for Go and Automatic Reference Counting for Swift).
 There’s, in fact, few languages in wide use today that do not have any kind of
@@ -231,7 +231,7 @@ runtime system, notably C, C++ and Rust.
   - Understand how it makes code highly portable
   - Understand how it is most often not as fast as compiled code, particularly
     at startup time
-- See also the “memory allocation” section
+- See also the [memory allocation](#3-memory-allocation) section
 
 ## 5. Operators in Code
 
@@ -322,9 +322,9 @@ messiness in very different ways.
   - And how some languages choose to do it automatically and some don’t
 - \[B4\] Understand why languages have two ways to compare strings: value and
   reference comparator
-  - E.g. understand why, in Java, you should in general not use \== to compare
-    two strings
-- \[C6\] The variety of ways that strings are modelled points to the fact that
+  - E.g. understand why, in Java, you should in general not use `==` to compare
+    two `String`s
+- \[C6\] The variety of ways that strings are modeled points to the fact that
   there is no way to implement strings that is strictly better than others. Be
   able to articulate the pros/cons of each choice
 - \[A7\] Be sure you know how the language you are using models strings in every
@@ -357,14 +357,14 @@ paradigms in an inconsistent manner.
   - Understand that reflection is a runtime concept
     - But also understand how introspection can do something similar to
       reflection, but at compile-time
-- \[C5\] Understand the difference between high-level languages (like C\#, Java
+- \[C5\] Understand the difference between high-level languages (like  C#, Java
   and most others) and lower-level languages (like C as assembler)
 - \[C7\] Understand the philosophies around languages “surface size”
   - Understand the advantages of “small” languages, like Go and C. E.g.
     - Easy to learn
     - Easy to implement a parser/compiler
     - Fewer ways to do the same thing
-  - Understand the advantages of “large” languages like C\# and Kotlin. E.g.
+  - Understand the advantages of “large” languages like  C# and Kotlin. E.g.
     - “First class” support for more use cases
     - can make the code much more expressive
 - \[C7\] Understand the different language philosophies around
@@ -428,7 +428,7 @@ TODO Extract this content into a separate document and restructure it
 
 - Inherits many of the benefits from Java by virtue of running on the JVM – many
   of the plusses from the Java section apply
-- Has even an better type system than Java
+- Has even an even better type system than Java
   - This is particularly true about nullable types, which are built directly in
     the type system
   - sealed class hierarchies
@@ -490,15 +490,15 @@ they are discussed together. Differences will be pointed out.
 ### Typescript
 
 - Compiles to javascript
-- A surprisingly-good uplift to javascript
-  - particularly considering that all javascript is valid typescript
+- A surprisingly-good uplift to JavaScript
+  - particularly considering that all JavaScript is valid TypeScript
 - Excellent type system, with advanced type inference and smart casting
-  - Again, surprisingly-good type system, considering that javascript has a weak
+  - Again, surprisingly-good type system, considering that JavaScript has a weak
     and dynamic type system
-- Since all javascript is valid typescript, makes gradual transition of a
-  javascript code base to typescript possible
+- Since all JavaScript is valid TypeScript, makes gradual transition of a
+  JavaScript code base to TypeScript possible
 
-### C\#
+###  C#
 
 - “Greatly inspired” by Java
 - Improved Java in several aspects (like generics)
@@ -564,7 +564,7 @@ problems you face, but also help you get up to speed with an unknown code base.
     - Understand Scope Mismatch (aka Captive Dependency) the issue with object
       lifetime management (“scopes”) where you should not inject something that
       has a shorter lifetime than the injectee
-    - Also see the section on “Dependency Injection Frameworks”
+    - See also [Dependency Injection Frameworks](#13-dependency-injection-frameworks) section
 - \[C8\] For each of these, understand if they are sometimes (or always)
   considered an anti-pattern, and why, and what are the alternatives
   - E.g. Singletons vs Dependency Injection
@@ -576,7 +576,7 @@ below) and there are some key concepts you should understand. Unfortunately, the
 nomenclature used by different frameworks is not always consistent, so be warned
 that things may be called here by a different name than you are used to.
 
-- See the “DI” bullet in the “Design Patterns” section
+- See also the “DI” bullet in the [Design Patterns](#12-design-patterns-and-anti-patterns-in-code) section
 - \[C5\] Understand the difference between DI and a DI framework
 - \[C5\] Understand why it’s common to want to use a DI framework when using DI
   - E.g. it saves a lot of boilerplate
@@ -638,7 +638,7 @@ otherwise.
     pitfalls
 - \[C5\] Understand the difference between a DAG (Directed Acyclic Graph) and a
   non-DAG
-  - And the implications – e.g. why are DAGs much easier to handle?
+  - And the implications – e.g. why are DAGs much easier to handle?
 - \[B4\] Learn about different ways to traverse trees
   - Depth-first search (DFS) vs breadth-first search (BFS)
   - Pre-order, in-order, post-order
@@ -687,8 +687,8 @@ otherwise.
   - And how they relate to thread-safety of data structures
   - Learn how to get an intuition of when race conditions may be happening, and
     how to find their causes
-  - Understand why immutability is such an useful tool to achieve thread-safety
-- \[B4\] Learn about dead locks
+  - Understand why immutability is such a useful tool to achieve thread-safety
+- \[B4\] Learn about deadlocks
 - \[C7\] Stream processing technology, like
   - ETL
   - Mapreduce
@@ -708,7 +708,7 @@ interesting overlap, so I’ll cover all in this section.
   algorithms / cryptographic signatures
 - \[D4\] Learn about the different kinds of encryption
   - Secret Key
-  - Public-Private
+  - Public-Private Key
 - \[D3\] Compression
   - Be familiar with how compression is implemented, at least in principle
 - \[C6\] Error correction
@@ -723,10 +723,10 @@ interesting overlap, so I’ll cover all in this section.
 
 ## 17. System Design
 
-- Also see the “Design Patterns” section
+- See also the [Design Patterns](#12-design-patterns-and-anti-patterns-in-code) section
 - \[D3\] Understand functional vs non-functional requirements
 - \[C4\] Understand the value of a good API
-  - Excellent resource: Josh Bloch’s excellent ”How To Design A Good API and Why
+  - Excellent resource: Josh Bloch’s excellent “How To Design A Good API and Why
     it Matters” [talk](https://www.youtube.com/watch?v=aAb7hSCtvGw)
 - \[D5\] Get acquainted with some standard non-functional requirements
   - Scalability
@@ -749,11 +749,11 @@ interesting overlap, so I’ll cover all in this section.
 
 ## 18. Identifiers
 
-- \[C4\] Understand the messiness of identifiers. E.g. how tricky it can be have
+- \[C4\] Understand the messiness of identifiers. E.g. how tricky it can be to have
   good, unique identifiers
   - Understand how UUIDs / GUIDs work, but are not adequate to all circumstances
   - Likewise for cryptographic hashes
-  - Likewise for timestamps (also see the section on “Time / Clock / Calendars”)
+  - Likewise for timestamps (see also the [Time, Clocks, Calendars](#19-time-clocks-calendars) section)
   - Understand the unique issues IDs that need to be used by end users
     - E.g. a Bank Account or a gift card redemption code
     - Understand the role of error correction / checksum
@@ -783,10 +783,11 @@ interesting overlap, so I’ll cover all in this section.
 - \[D7\] Understand some kinds of hardware exploits
   - Rowhammer
   - Specter
-- Understand the role of penetration tests
-- Understand fuzzing / fuzz testing
-- Understand vulnerability scanning
-- Confused deputy
+- \[C6\] Understand other kinds of exploits
+  - Confused deputy
+- \[C3\] Understand vulnerability scanning
+- \[C6\] Understand fuzzing / fuzz testing
+- \[C6\] Understand the role of penetration tests
 
 ## 21. Serialization
 
@@ -803,7 +804,7 @@ code, code comments, design docs, etc.
     source of truth about what your program does
   - Comments:
     - “Structured” comments (aka “Doc Comments”, “Docstrings” etc). That’d be
-      javadoc in Java, Kdoc in Kotin, rustdoc in Rust etc. Understand why you
+      Javadoc in Java, Kdoc in Kotin, rustdoc in Rust etc. Understand why you
       always want to use a structured comment when you can instead of “regular”
       code comments
     - Regular code comments.
@@ -821,7 +822,7 @@ code, code comments, design docs, etc.
 - \[B3\] Learn how to leverage TODOs to track future work, and how to not
   overuse them
 - \[C3\] Understand that when documenting a method/class, you don’t quite want
-  to document what the method/class does but you want to document the contract
+  to document what the method/class does, but you want to document the contract
   - Understand the concept of API contract
   - Understand the concept of preconditions, post-conditions, side effects etc
 
@@ -834,7 +835,7 @@ translated but also properly localized.
 - \[C3\] Learn about Unicode
 - \[C4\] Learn about character encodings in general
   - Learn about ASCII
-  - Learn about UTF-8 vs UTF16
+  - Learn about UTF-8 vs UTF-16
   - Learn about other encodings
   - Understand encodings that take a fixed vs a variable number of bits
 - \[C4\] Understand the difference between the memory representation of a string
@@ -864,7 +865,7 @@ translated but also properly localized.
 - \[C5\] Learn about Same-Origin Policy (SOP)
 - \[C5\] Learn about WebSocket
 - \[C5\] Learn about WebHooks
-- Also see the “Security” Section
+- See also the [Security](#20-security) section
 
 ## 25. Computer Networking
 
@@ -889,9 +890,9 @@ Computers are much more powerful when connected to each other.
   today, and how they are different from each other
   - For computers, primarily Wi-Fi (IEEE 802.11)
   - For cell phones, primarily LTE-M and NB-IoT (part of the 4G/5G specs)
-  - IEEE 802.15.1 which is the Layer 2 part of the bluetooth spec
-  - Also IEEE 802.15.4, a low-powered alternative to Wi-Fi
-  - Also LoRa another protocol for low-powered devices
+  - IEEE 802.15.1 which is the Layer 2 part of the Bluetooth spec
+  - Also, IEEE 802.15.4, a low-powered alternative to Wi-Fi
+  - Also, LoRa another protocol for low-powered devices
 - \[C6\] Understand the fundamental challenges with networking, including
   - Loss of connectivity
   - Increased Lag
@@ -908,12 +909,12 @@ Computers are much more powerful when connected to each other.
   - How it’s implemented (e.g. learn about leaky bucket, pushback, tokens etc)
 - \[C4\] Understand the difference between streaming and message-base
   (non-streaming) protocols
-  - Both unidirectional and bi-directional
+  - Both unidirectional and bidirectional
 - \[D4\] Understand the concept of Proxying
   - Why it’s used
   - How it’s implemented
     - How it can be implemented in different points of the OSI Layer
-      - Typically Layer 7 (application) or Layer 4 (transport). NAT (Layer 3\)
+      - Typically, Layer 7 (application) or Layer 4 (transport). NAT (Layer 3\)
         is also common, but it’s not generally thought of as a proxy (why?)
       - Why/when you’d want to do proxying at one vs another layer
   - Complications/Limitations
@@ -939,11 +940,11 @@ It is in your best interest to understand the IP protocol very well.
   - What they are
   - How they are different
   - When to use one vs the other
-- \[D4\] Understand Ipv4 vs ipv6
-  - Understand how ipv4 is still commonly-used 30 years after it was expected to
+- \[D4\] Understand Ipv4 vs IPv6
+  - Understand how IPv4 is still commonly-used 30 years after it was expected to
     run out of addresses, by: the clever invention of NATs; the
     repurposing/refining of network masks; the reclaiming of large chunks of
-    addresses; and by ipv6
+    addresses; and by IPv6
   - Understand IPv4 “Private Addresses” vs IPv6 “Unique Local Addresses” (ULA)
   - Understand NAT (Network Address Translators)
     - Understand port forwarding, and why it less common today due to the
@@ -980,7 +981,7 @@ It is in your best interest to understand the IP protocol very well.
   - What problem it tries to address (e.g. expose a flexible API so clients can
     have more control)
   - What problems those choices cause (e.g. the “N+1” issue)
-- Also see the “UI / Frontend” section
+- See also the [UI, Gui. Frontend](#24-ui-gui-frontend-development) section
 
 ## 28. Misc Databases/Datastores Topics
 
@@ -1102,7 +1103,7 @@ that said, it’s important to have some understanding of key hardware concepts.
   - Branch prediction / speculative execution
   - CPU caches (like L1 and L2) and why these things exist
   - Big endian vs little endian
-- \[D6\] Understand why Java allows for “word tearing” of 64 bit numbers
+- \[D6\] Understand why Java allows for “word tearing” of 64-bit numbers
 - \[C5\] Be able to give a rough estimate for the following questions on a
   “modern computer”:
   - How many additions/comparisons can be performed in a second?
@@ -1172,7 +1173,7 @@ probably the most important
   - Extract an interface/superclass (or the opposite)
   - Add/remove explicit type declarations (say to local variables)
 - \[B4\] Learn how to use your IDE to navigate your repository. You want to
-  efficiently navigate code, both while modifying it as well as while you are
+  efficiently navigate code, while modifying it as well as while you are
   trying to understand it. Here are some things you want to be able to do
   efficiently (including without using the mouse):
   - Go to a file by name. The same for a class and for a function/method
@@ -1261,13 +1262,13 @@ Note: below, I’ll be using the nomenclature `main` (instead of the old name
 As mentioned elsewhere, it is important to learn about and use well your tools.
 Here’s a few tools worthy of notice (not covered elsewhere in this doc).
 
-- \[C4\] Tmux \[Linux / MacOS\]. If you use the CLI (and you should) you want to
+- \[C4\] Tmux \[Linux / macOS\]. If you use the CLI (and you should) you want to
   learn about tmux and take the time to configure it
 - \[D4\] Emacs / vi. It’s good to know how to at least do basic text editing
   over a term
 - \[C4\] Learn how to use a good diff tool and a good merge tool (it could be
   the same)
-- \[C5\] \[MacOs\] Use homebrew. You can get your Mac Terminal (which I would
+- \[C5\] \[macOS\] Use homebrew. You can get your Mac Terminal (which I would
   use iTerm, really) to be a much more capable CLI
 - \[C7\] \[Windows\] WSL. Ok, so Windows is not POSIX-compliant, but WSL
   (despite its limitations) is a pretty awesome way to bring a lot of the Linux
@@ -1351,7 +1352,7 @@ These are quite distinct, so let’s discuss each one separately
 
 ### Artificial Intelligence: As a User
 
-- \[B4\] Learn how to use an LLM chatbot as a assist for learning and having a
+- \[B4\] Learn how to use an LLM chatbot as an assist for learning and having a
   dialogue
   - Not for the blindly trusting
 - \[B4\] Understand how to ask questions to minimize hallucinations
@@ -1404,7 +1405,7 @@ Do not take health advice from me, but do seek out professional advice\!
     - I am particularly fond of
       [this](https://www.amazon.com/dp/B01936N73I?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1)
       Kensington but try different options
-  - Understand how to mitigate RSI with an ergo keyboard
+  - Understand how to mitigate RSI with an ergonomic keyboard
     - I am particularly fond of
       [this](https://www.amazon.com/dp/B0F5YNL62D?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1)
       Encase (from an old Microsoft design) but try different options
@@ -1439,7 +1440,7 @@ Do not take health advice from me, but do seek out professional advice\!
   [book](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1_sspa?crid=29YYD60CPR6OE&dib=eyJ2IjoiMSJ9.mTRaTOPYqsPcUsGD8aznte8IMQZZiYjv7_Xwyyi1iS2agVs4KLcx5qwmrKiyIxDiiaA6QbUY3MCBnb28lUrTGOw4rZYq2Lhf6z4JylQnbFuTfD6WMSKZ2izHndzfV-Ky9NmDl7WsksMgVxIlYFmG7iOkspV9gCvaWen0y-NgyAB5h9heo2aiCmVs-15_vB4oaJk39mlJ_DXQdKEmTKZAaisgf_stgMTzEpcnj8Ju6qc.UsxA9CKA92WPXqYKfZEDlzWh4BkKAfrgBstHbML-kUk&dib_tag=se&keywords=design+patterns&qid=1767328460&sprefix=design+patterns%2Caps%2C215&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)
 - Effective Java
   [book](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997/ref=sr_1_1?crid=11178DR3IEOMC&dib=eyJ2IjoiMSJ9.aEVmSGt9ra24VmlN-_LvktnyVdqdspa55_edw62NBSPexJX_-zu4CGuVvGA-WJTgQ2NEuFwpTs1vCNaNPigmKYFwxOfL2Z77abywUFer8fk2XQBaIsJ3TfuCVyilEw1INFIXZ-uyCrWncYV83Q2QjQ.LlgcEp5MMhvABIBs6uvqDLVAZJc7NpBD-8whsfwEtas&dib_tag=se&keywords=effective+java+4th+edition&qid=1767994280&sprefix=effective+java+%2Caps%2C240&sr=8-1)
-- Effective Typescript
+- Effective TypeScript
   [book](https://www.amazon.com/Effective-TypeScript-Specific-Ways-Improve/dp/1098155068/ref=sr_1_1?crid=2J0FPORE2IDKS&dib=eyJ2IjoiMSJ9.3kCLpeeLsIL18j2GgNNS-XQ0btG0lak74ElAxyAWJU9atrjBInzjAoVHOHQQggwqOOHbw6Djc1wzien30a0hkLurIPPrAQA_-G3ol1DaiFFnCCjDA9pLoETKGH1GpPc6_9dM5ErmxIKdF7KB_J9phWeEEIGeN3ZZGW_2XerYtAHWeoeBTrkS3EYJw_4PtAQ16BU4A5paTangQDSstA2uVn9LqRBK0hqtc9GW0ifdGbM.-arxdgttWG0hW4tqZW1LsjY3-hkdhin4mTA97yLCl88&dib_tag=se&keywords=effective+typescript&qid=1767994345&sprefix=effective+typ%2Caps%2C190&sr=8-1)
 - Testing on The Toilet blog
 
