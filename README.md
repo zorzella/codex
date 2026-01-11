@@ -356,6 +356,8 @@ paradigms in an inconsistent manner.
     Immutability, First-Class & Higher-Order Functions, Referential Transparency
   - understand how the OO and the functional principles are similar or different
 - \[C4\] Understand imperative vs declarative programming
+- \[C4\] Understand the concept of event-driven programming
+  - and why it's so compelling for UI development
 - \[B7\] Understand reflection
   - Understand concepts such as
     - Type erasure
@@ -913,6 +915,7 @@ translated but also properly localized.
 - \[C7\] Learn about the unique challenges of writing UI code
 - \[C7\] Learn UI-specific patterns such as Model-View-Controller (MVC) and
   Model-View-Presenter (MVP)
+- \[C4\] Understand why event-driven programming is such a good fit for UIs
 - \[D8\] Have a general understanding of UX concepts and challenges
   - Good watch: “How We're Redesigning Audacity For The Future”
     [video](https://www.youtube.com/watch?v=QYM3TWf_G38)
