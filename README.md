@@ -75,7 +75,7 @@ Peace,
 10. [Misc Programming Language Features](#10-misc-programming-language-features)
 11. [Programming Languages Highlights](#11-programming-languages-highlights)
 12. [Design Patterns and anti-patterns in Code](#12-design-patterns-and-anti-patterns-in-code)
-13. [Dependency Injection Frameworks](#13-dependency-injection-frameworks)
+13. [Design Principles](#13-design-principles)
 14. [Data Structures](#14-data-structures)
 15. [Concurrency](#15-concurrency)
 16. [Hashing, Error Correction, Compression, Cryptography](#16-hashing-error-correction-compression-cryptography)
@@ -349,6 +349,11 @@ paradigms in an inconsistent manner.
 ## 10. Misc Programming Language Features
 
 - \[C6\] Understand object-oriented vs procedural vs functional programing
+  - understand the Object Orientation principles: Encapsulation, Abstraction,
+    Inheritance, Polymorphism
+  - understand the Functional Programming principles: Pure Functions,
+    Immutability, First-Class & Higher-Order Functions, Referential Transparency
+  - understand how the OO and the functional principles are similar or different
 - \[C4\] Understand imperative vs declarative programming
 - \[B7\] Understand reflection
   - Understand concepts such as
@@ -375,7 +380,7 @@ paradigms in an inconsistent manner.
 - \[B6\] Understand the value of having preconditions and postconditions in your
   code
 - \[C6\] Understand the concept of invariants
-- \[B8\] Understand the issues with side-effects
+- \[B8\] Understand the issues and concerns with side-effects
   - What they are and why they are so “special”
 - \[B8\] Understand why immutability is so valuable
 
@@ -565,13 +570,14 @@ problems you face, but also help you get up to speed with an unknown code base.
       lifetime management (“scopes”) where you should not inject something that
       has a shorter lifetime than the injectee
     - See also
-      [Dependency Injection Frameworks](#13-dependency-injection-frameworks)
+      [Dependency Injection Frameworks](#dependency-injection-frameworks)
       section
+  - Lazy loading
 - \[C8\] For each of these, understand if they are sometimes (or always)
   considered an anti-pattern, and why, and what are the alternatives
   - E.g. Singletons vs Dependency Injection
 
-## 13. Dependency Injection Frameworks
+### Dependency Injection Frameworks
 
 Dependency Injections frameworks are very common (for reasons we’ll explore
 below) and there are some key concepts you should understand. Unfortunately, the
@@ -589,7 +595,27 @@ that things may be called here by a different name than you are used to.
   else) to help with Object Lifetime Management (sometimes called Instance
   Management)
 - \[C5\] Learn about choices of different DI frameworks in your Language
-  - \[Java\] Understand the differences between Guice, Springboot and Dagger
+  - \[Java\] Understand the differences between Guice, Spring Boot and Dagger
+
+## 13. Design principles
+
+Nothing beats experience to create intuition, but there are design principles
+that help you write good software. Learn them:
+
+- \[C5\] Principle of Least Astonishment: designing good APIs
+  - Also listed under the [system design](#17-system-design) section, and
+    covered well in Josh Bloch’s excellent “How To Design A Good API and Why it
+    Matters” [talk](https://www.youtube.com/watch?v=aAb7hSCtvGw)
+- \[C5\] Separation of concerns: Fixing "spaghetti" code
+- \[C5\] DRY (Don't Repeat yourself): Reducing code duplication
+- \[C5\] YAGNI (You Aren't Gonna Need It – or YAGNIY "you ain't gonna need it
+  yet"): over-engineering for "future possibilities" often leads to wasted
+  effort
+- \[C5\] KISS (Keep It Simple, Stupid): Avoid unnecessary complexity
+- \[C5\] Composition Over Inheritance (also covered in the
+  [Type](#1-the-type-system-in-programming-languages) section)
+- \[C5\] Law of Demeter: "Talk to friends, not to strangers."
+- \[C5\] Understand why knowing these help identify "code smells"
 
 ## 14. Data Structures
 
@@ -614,6 +640,11 @@ otherwise.
     - DAG (Directed Acyclic Graph)
 - \[B7\] Learn about more advanced data structures
   - Cache
+    - understand eviction strategies/terminology: by timestamp, by size, LRU,
+      proactive vs reactive eviction
+      - and why you need eviction strategies
+    - Understand why caches looks simple but are a common source of bugs
+    - Understand memoization, and how it relates to lazy-loading
   - MultiSet
   - MultiMap
   - BiMap
@@ -804,8 +835,8 @@ can also be thought of a transmitting data from the past to the future.
 - \[C5\] Understand different ways to implement this in code
   - That it can be achieved with manually written code
   - That is can be (and so often is) achieved using some library/tooling
-  - That it can be implement to do the serialization/deserialization heavy
-    lifting through generated code or using reflection
+  - That it can be implemented to do the serialization/deserialization
+    heavy-lifting through generated code or using reflection
     - and what are the advantages/disadvantages of each
 - \[C5\] Understand the different common serialization protocols/formats
   - protobufs (gRPC)
