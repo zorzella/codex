@@ -1566,5 +1566,6 @@ possible.
 
 ## Version History / Changelog
 
-2026 Jan 10 – Version 1 (by Zorzella) 2026 Jan 11 – Added "Experience and
-intuition" and other misc changes (by Zorzella)
+- 2026 Jan 10 – Version 1 (by Zorzella)
+- 2026 Jan 11 – Added "Experience and intuition" and other misc changes (by
+  Zorzella)
