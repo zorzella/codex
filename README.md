@@ -1038,6 +1038,8 @@ It is in your best interest to understand the IP protocol very well.
   - When should you use a 4xx vs a 5xx error code
   - Why are there several success codes. What is each of them for?
   - What are some of the common 4xx and 5xx error codes
+- \[C5\] Understand the difference between an HTTP redirect, an HTTP proxy and 
+  tunneling
 - \[B6\] Understand different RPC technologies: the similarities and differences
   between gRPC, REST, SOAP, GraphQL
 - \[B5\] Understand gRPC
