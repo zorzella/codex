@@ -71,7 +71,7 @@ Peace,
 6. [Integer Numbers in Code](#6-integer-numbers-in-code)
 7. [Floating Point Numbers in Code](#7-floating-point-numbers-in-code)
 8. [Strings in Code](#8-strings-in-code)
-9. [Error Conditions / Error Handling in Code](#9-error-conditions--error-handling-in-code)
+9. [Error Conditions / Error Handling](#9-error-conditions--error-handling)
 10. [Misc Programming Language Features](#10-misc-programming-language-features)
 11. [Programming Languages Highlights](#11-programming-languages-highlights)
 12. [Design Patterns and anti-patterns in Code](#12-design-patterns-and-anti-patterns-in-code)
@@ -331,7 +331,7 @@ messiness in very different ways.
 - \[A7\] Be sure you know how the language you are using models strings in every
   one of these possible ways, and what are the pitfalls you need to watch for
 
-## 9. Error Conditions / Error Handling in Code
+## 9. Error Conditions / Error Handling
 
 Handling errors is messy, and there are multiple paradigms favored by different
 languages, and, indeed, it often happens that a single code base uses different
@@ -346,6 +346,10 @@ paradigms in an inconsistent manner.
   used for exceptional cases
 - \[C5\] Understand how different languages “favor” one method of error over the
   other
+- \[C7\] Understand the issue of cascading failures
+- \[C7\] Understand how error handling and mitigation can itself cause problems
+  - e.g. see how retries can trigger the
+    [Thundering Herd Problem](https://en.wikipedia.org/wiki/Thundering_herd_problem)
 
 ## 10. Misc Programming Language Features
 
@@ -576,6 +580,9 @@ problems you face, but also help you get up to speed with an unknown code base.
       [Dependency Injection Frameworks](#dependency-injection-frameworks)
       section
   - Lazy loading
+  - Object pooling
+    - understand one-time startup costs, and how pooling is used to mitigate
+      that
 - \[C8\] For each of these, understand if they are sometimes (or always)
   considered an anti-pattern, and why, and what are the alternatives
   - E.g. Singletons vs Dependency Injection
@@ -1465,7 +1472,7 @@ do so.
 - Fix flaky tests. It is common for projects to end up with flaky tests. It is
   also common to fix that by adding a blind "retry a few times". Find the flaky
   tests in your project, and fix the flakiness. You will gain experience chasing
-  race conditions and you will gain more understanding of your code base. And
+  race conditions, and you will gain more understanding of your code base. And
   you will make your build faster. And you may find that the flakiness is caused
   by an actual problem with your production code.
 - Chase the quirky behavior. It often happens there is some quirky "mostly
