@@ -804,6 +804,8 @@ interesting overlap, so I’ll cover all in this section.
   - Likewise for cryptographic hashes
   - Likewise for timestamps (see also the
     [Time, Clocks, Calendars](#19-time-clocks-calendars) section)
+  - Understand why it's so tricky to implement a simple incrementing number to
+    use as an id
   - Understand the unique issues IDs that need to be used by end users
     - E.g. a Bank Account or a gift card redemption code
     - Understand the role of error correction / checksum
@@ -813,9 +815,10 @@ interesting overlap, so I’ll cover all in this section.
 ## 19. Time, Clocks, Calendars
 
 - \[C4\] Understand how messy it is to deal with time, clocks and calendars
-  - Check out these “Falsehoods Programmers Believe About Time”
-    [list](https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca) –
-    try to imagine why each of the statements is a falsehood
+  - Check out this
+    [list](https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca) of
+    “Falsehoods Programmers Believe About Time” – try to imagine a scenario
+    where each of the statements is a falsehood
 - \[C5\] Understand the need to use a testing double for clocks
 - \[C4\] Understand the common ways to represent time in code
   - E.g. millis since UNIX epoch
@@ -1038,7 +1041,7 @@ It is in your best interest to understand the IP protocol very well.
   - When should you use a 4xx vs a 5xx error code
   - Why are there several success codes. What is each of them for?
   - What are some of the common 4xx and 5xx error codes
-- \[C5\] Understand the difference between an HTTP redirect, an HTTP proxy and 
+- \[C5\] Understand the difference between an HTTP redirect, an HTTP proxy and
   tunneling
 - \[B6\] Understand different RPC technologies: the similarities and differences
   between gRPC, REST, SOAP, GraphQL
