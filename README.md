@@ -616,6 +616,9 @@ that help you write good software. Learn them:
   - Also listed under the [system design](#17-system-design) section, and
     covered well in Josh Bloch’s excellent “How To Design A Good API and Why it
     Matters” [talk](https://www.youtube.com/watch?v=aAb7hSCtvGw)
+  - There's also this hilarious
+    [talk](https://www.destroyallsoftware.com/talks/wat) titled "Wat" that shows
+    the Principle of Least Astonishment being violated.
 - \[C5\] Separation of concerns: Fixing "spaghetti" code
 - \[C5\] DRY (Don't Repeat yourself): Reducing code duplication
 - \[C5\] YAGNI (You Aren't Gonna Need It – or YAGNIY "you ain't gonna need it
