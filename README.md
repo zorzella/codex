@@ -47,15 +47,16 @@ it is not a beginner’s guide\! And note that it’d take years of concerted ef
 to learn everything that is listed here.
 
 Note: different languages or tooling often have different names for the same
-things. E.g. what Java calls a “Map”, C# calls a “Dictionary”. I will often call
+things. E.g. what Java calls a `Map`, C# calls a `Dictionary`. I will often call
 out the different names; or, sometimes I’ll say something like “learn about
 synchronized blocks (as Java calls them)” – meaning that other languages will
-likely have something like Java’s “synchronized” keyword, but may call these
-something else (e.g. in this case, in C\# this is done with “lock”). Finally, I
+likely have something like Java’s `synchronized` keyword, but may call these
+something else (e.g. in this case, in C# this is done with `lock`). Finally, I
 will also try to call out things that are more language-specific, whenever I
 feel that’s important.
 
-If you want to contribute to this doc, read the “Contributing” section.
+If you want to contribute to this doc, read the [Contributing](#contributing)
+section.
 
 Peace,
 
@@ -139,7 +140,7 @@ deceiving.
 - \[C8\] Understand type parameterization
   - Understand Generics (as seen in Java, C# etc)
     - Understand Java type erasure
-    - Understand C\# reification of parameter types
+    - Understand C# reification of parameter types
     - Understand the limited way you can use reified types in Kotlin
     - Understand the hacks you can do to get something similar to a reified type
       in Java
@@ -149,7 +150,7 @@ deceiving.
   - Understand variance (invariance, co-variance and contra-variance) in the
     context of type parameters
     - Understand the upsides and downsides of declaration-site variance like
-      Kotin’s and C\#’s `in` and `out` type parameters
+      Kotin’s and C#’s `in` and `out` type parameters
     - Understand the upsides and downsides of use-site variance, like Java’s
       `? extends` and `? super` type parameters
     - Understand other kinds of variance, like TypeScript’s “automatic
@@ -165,7 +166,7 @@ deceiving.
     Java/Kotlin where they are actual classes, to Rust/Swift where they are even
     more capable than Java/Kotlin
 - \[C4\] Understand the different ways languages refer to “this class is not
-  extensible”, e.g. Java’s `final` keyword whereas in C\# they are called
+  extensible”, e.g. Java’s `final` keyword whereas in C# they are called
   `sealed` classes (which means something different in Java, see future point)
 - \[C5\] \[Kotlin/Java\] Understand what Kotlin and Java refer to as sealed
   classes
@@ -208,7 +209,7 @@ allocation.
     patterns work better or worse (e.g. typically a GC is good at dealing with
     short-lived objects. You should know why)
 - \[D4\] Understand how swift’s “ARC” is an alternative to garbage collection
-- \[D5\] Understand the difference between a C/C++ pointer and a Java/Kotlin/C\#
+- \[D5\] Understand the difference between a C/C++ pointer and a Java/Kotlin/C#
   object reference
   - Understand what pointer arithmetic is and why most languages other than
     C/C++ either don’t allow it at all or segregate to sections of code labelled
@@ -217,11 +218,11 @@ allocation.
 ## 4. Virtual Machines, Interpreters, Runtime Systems
 
 Most programming languages rely on some kind of virtual machine (or interpreter)
-to run: Java, Kotlin, Python, JavaScript/TypeScript, C\# etc. Others, like Go
-and Swift, rely on a “runtime system” that helps with tasks such as memory
-handling (garbage collection for Go and Automatic Reference Counting for Swift).
-There’s, in fact, few languages in wide use today that do not have any kind of
-runtime system, notably C, C++ and Rust.
+to run: Java, Kotlin, Python, JavaScript/TypeScript, C# etc. Others, like Go and
+Swift, rely on a “runtime system” that helps with tasks such as memory handling
+(garbage collection for Go and Automatic Reference Counting for Swift). There’s,
+in fact, few languages in wide use today that do not have any kind of runtime
+system, notably C, C++ and Rust.
 
 - \[C6\] Understand what virtual machines (such as the JVM or the CLR) are for
   - And what their capabilities, advantages and disadvantages
@@ -240,7 +241,7 @@ runtime system, notably C, C++ and Rust.
   in
   - Such as AND, OR, XOR, NOT
   - Understand “short-circuit” evaluation
-    - E.g. why it’s ok in Java/C\# to say `a != null && a.b() == 10`
+    - E.g. why it’s ok in Java/C# to say `a != null && a.b() == 10`
 - \[C4\] Understand the bitwise operators available in the languages you program
   in
   - The same AND, OR, XOR and NOT but that operate on the bits
@@ -261,7 +262,7 @@ runtime system, notably C, C++ and Rust.
   to store an integer number in memory: fixed-width primitives such as `int8`,
   `int16`, `int32`, `int64` or their unsigned counterparts (their names vary in
   different languages); and arbitrary-size number classes, such as integers in
-  python, or `BigInteger` in Java/Kotlin/C\#
+  python, or `BigInteger` in Java/Kotlin/C#
   - Understand the benefits and downsides of each, and when you’d want to use
     either
   - Understand that, even when using arbitrary-size number classes, they still
