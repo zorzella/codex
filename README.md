@@ -351,6 +351,8 @@ paradigms in an inconsistent manner.
 - \[C7\] Understand how error handling and mitigation can itself cause problems
   - e.g. see how retries can trigger the
     [Thundering Herd Problem](https://en.wikipedia.org/wiki/Thundering_herd_problem)
+- \[C6\] Learn about ways to have software be resilient to error conditions
+  - Understand the concept of graceful degradation
 
 ## 10. Misc Programming Language Features
 
