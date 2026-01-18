@@ -92,22 +92,23 @@ Peace,
 26. [The Internet Protocol (IP)](#26-the-internet-protocol-ip)
 27. [HTTP and related protocols](#27-http-and-related-protocols)
 28. [Misc Databases/Datastores Topics](#28-misc-databasesdatastores-topics)
-29. [Relational Data Bases](#29-relational-data-bases)
-30. [Testing](#30-testing)
-31. [Query Languages](#31-query-languages)
-32. [Hardware](#32-hardware)
-33. [Operating Systems](#33-operating-systems)
-34. [IDEs (Integrated Development Environments)](#34-ides-integrated-development-environments)
-35. [Version Control Systems: git](#35-version-control-systems-git)
-36. [Misc Tools for Developers](#36-misc-tools-for-developers)
-37. [Project Management](#37-project-management)
-38. [Build / Deployment / Production](#38-build--deployment--production)
-39. [Artificial Intelligence (AI)](#39-artificial-intelligence-ai)
-40. [Experience and Intuition](#40-experience-and-intuition)
-41. [Health](#41-health)
-42. [Books and Resources](#books-and-resources)
-43. [Contributing](#contributing)
-44. [Version History / Changelog](#version-history--changelog)
+29. ["Traditional" Relational DBs](#29-traditional-relational-dbs)
+30. ["Modern" DBs](#30-modern-dbs)
+31. [Testing](#31-testing)
+32. [Query Languages](#32-query-languages)
+33. [Hardware](#33-hardware)
+34. [Operating Systems](#34-operating-systems)
+35. [IDEs (Integrated Development Environments)](#35-ides-integrated-development-environments)
+36. [Version Control Systems: git](#36-version-control-systems-git)
+37. [Misc Tools for Developers](#37-misc-tools-for-developers)
+38. [Project Management](#38-project-management)
+39. [Build / Deployment / Production](#39-build--deployment--production)
+40. [Artificial Intelligence (AI)](#artificial-intelligence-as-an-integrator)
+41. [Experience and Intuition](#41-experience-and-intuition)
+42. [Health](#42-health)
+43. [Books and Resources](#books-and-resources)
+44. [Contributing](#contributing)
+45. [Version History / Changelog](#version-history--changelog)
 
 ## 1. The Type System in Programming Languages
 
@@ -1094,8 +1095,18 @@ It is in your best interest to understand the IP protocol very well.
 - \[C5\] Understand the concept of Normalized / denormalized data
   - Why would one want/need to have denormalized data?
   - Why would one want to try to have normalized data whenever possible?
+- \[C7\] Understand prepared statements
+  - Why they are good for security
+  - Why they are good for speed
+  - Why they make code less brittle
+  - Why they make code more readable
+  - Why they save programmers from implementing string manipulation in code
+- \[C7\] Understand stored procedures
+  - Why there's a love/hate for them
+- See also the ["Traditional" Relational DBs](#29-traditional-relational-dbs)
+  and the ["Modern" DBs](#30-modern-dbs) sections
 
-## 29. Relational Data Bases
+## 29. "Traditional" Relational DBs
 
 The following items use concepts and terminology from Postgres. Similar concepts
 and features exist in other DBs, maybe with different names.
@@ -1123,8 +1134,46 @@ and features exist in other DBs, maybe with different names.
 - \[C7\] Understand query planning and optimization
   - Understand when you may want to study query plans, how to read them, and how
     you can use that to optimize your queries
+- See also the
+  [Misc Databases/Datastores Topics](#28-misc-databasesdatastores-topics) and
+  the ["Modern" DBs](#30-modern-dbs) sections
 
-## 30. Testing
+## 30. "Modern" DBs
+
+For decades, most professionally-used databases were based on tables with a
+schema, were row-oriented, supported ACID principles and were queried through
+SQL statements. Then, in the 2000s, companies started using alternative data
+stores. They came originally to be known as NoSQL, but, later on, many started
+supporting SQL queries. There's also a tendency to call some of these solutions
+"datastores" as opposed to databases, but there's really no good terminology to
+lump all these (and many are quite distinct from each other), but I'm using a
+casual "modern" vs "traditional" to differentiate these two broad types.
+
+- \[C3\] Understand key-value datastores
+- \[C7\] Understand row-based vs column-based (aka columnar) architectures
+- \[C7\] Understand Wide-Column vs the true columnar stores
+- \[C5\] Understand schemaless databases
+  - Advantages and disadvantages or not having a scheme
+- \[C6\] Understand OLAP (Online Analytical Processing) vs the "traditional"
+  OLTP (Online Transaction Processing)
+  - And the relation between row-based vs column-based and
+  - Note that Redshift is considered a modern datastore (row-based, OLAP), but
+    it's actually built on postgres (with a modified backend)
+- \[C7\] Learn about Vector Databases
+- \[C9\] For each of these kinds of data stores, understand what are some
+  problems they are a good fit for, and what are some problems they are a bad
+  fit for
+- \[C4\] Understand why many of these modern DBs are fundamentally better at
+  horizontal scaling, and what do they mean by “infinite scaling”
+- \[C9\] Understand, for each of these, which kind they are across each of the
+  dimensions defined above (add to this list anything you use in your projects):
+  - CockroachDB, Google Spanner, TiDB, MongoDB, DynamoDB, Redis, Pinecone,
+    Weaviate, Snowflake, BigQuery, Elasticsearch, Cassandra, Memcached
+- See also the
+  [Misc Databases/Datastores Topics](#28-misc-databasesdatastores-topics) and
+  the ["Traditional" Relational DBs](#29-traditional-relational-dbs)
+
+## 31. Testing
 
 - \[C4\] Understand the different kinds of testing doubles and what they are
   good for (note: testing double nomenclature is used inconsistently, using the
@@ -1148,7 +1197,7 @@ and features exist in other DBs, maybe with different names.
 - \[C4\] Understand the principle of adding test coverage every time you have an
   incident in production.
 
-## 31. Query Languages
+## 32. Query Languages
 
 There’s a few very useful query languages to learn.
 
@@ -1166,7 +1215,7 @@ There’s a few very useful query languages to learn.
   - Available through its eponymous CLI tool to query JSON
 - \[D3\] Learn GraphQL. As discussed elsewhere
 
-## 32. Hardware
+## 33. Hardware
 
 This document is focused on software, and it’s easy to take hardware for
 granted. And most people will work most of the time in a platform-agnostic
@@ -1196,7 +1245,7 @@ that said, it’s important to have some understanding of key hardware concepts.
 - \[B5\] Understand the difference between throughput and latency when
   considering data transfer speeds
 
-## 33. Operating Systems
+## 34. Operating Systems
 
 - \[C8\] Be familiar with the different OSs, e.g.
   - MacOS
@@ -1226,7 +1275,7 @@ that said, it’s important to have some understanding of key hardware concepts.
 
 TODO: this section is under development
 
-## 34. IDEs (Integrated Development Environments)
+## 35. IDEs (Integrated Development Environments)
 
 It is important to master tools used to develop software, and the IDE is
 probably the most important
@@ -1285,9 +1334,16 @@ probably the most important
 - \[C5\] Learn how to use your IDE to profile your system, e.g. to locate
   performance bottlenecks
 
-TODO: link to IntelliJ and VSCode
+Note: if you are interested, I have documented a number of customizations
+(including keyboard shortcuts) that I did to IntelliJ and to VSCode (along with
+some other notes-to-self) which were the two editors I used the most for the
+last few years. It's a bit cryptic, but they are
+[here](https://docs.google.com/document/d/1QcqLlRv6oYZd3v7AYH8j0P-aCQABz6aojChJZlLm2c8/edit?tab=t.0#heading=h.rg780pie6a2y)
+(IntelliJ) and
+[here](https://docs.google.com/document/d/1DkgOtVUNG6mg2quw-OecfvjXhzUTSm_z9akUL0ZzI6M/edit?tab=t.0)
+(VSCode)
 
-## 35. Version Control Systems: git
+## 36. Version Control Systems: git
 
 At this point, git is king of source control. It’s an incredibly powerful source
 control system, but with a really clunky CLI. Learn it well.
@@ -1339,7 +1395,7 @@ Note: below, I’ll be using the nomenclature `main` (instead of the old name
 - \[D3\] Learn about how you can use git bisect to, say, look for the commit
   that introduces a bug
 
-## 36. Misc Tools for Developers
+## 37. Misc Tools for Developers
 
 As mentioned elsewhere, it is important to learn about and use well your tools.
 Here’s a few tools worthy of notice (not covered elsewhere in this doc).
@@ -1356,7 +1412,7 @@ Here’s a few tools worthy of notice (not covered elsewhere in this doc).
   (despite its limitations) is a pretty awesome way to bring a lot of the Linux
   power to Windows
 
-## 37. Project Management
+## 38. Project Management
 
 Software development is a team activity that takes place over extended periods
 of time. It is important to understand the principles of software project
@@ -1407,7 +1463,7 @@ to the issues of Waterfall, which was the prevalent way to develop before.
     – which, though it focuses on XP, lays out the foundation for Agile (fwiw,
     XP is considered the most radical/pure Agile)
 
-## 38. Build / Deployment / Production
+## 39. Build / Deployment / Production
 
 TODO: this section is under development
 
@@ -1417,7 +1473,7 @@ TODO: this section is under development
 - Observability
 - Monitoring
 
-## 39. Artificial Intelligence (AI)
+## 40. Artificial Intelligence (AI)
 
 Love it or hate it (or both) AI has already become an important part of being a
 software developer. There are three “hats” you may wear while interacting with
@@ -1473,7 +1529,7 @@ These are quite distinct, so let’s discuss each one separately
   - Training parameters
   - GPU / TPU
 
-## 40. Experience and intuition
+## 41. Experience and intuition
 
 There is nothing that replaces experience, which builds intuition for what is
 right or wrong. You need years of practice to gain these skills, but I present
@@ -1503,7 +1559,7 @@ do so.
   find something worth fixing and/or come up with ideas on how to improve your
   application's design.
 
-## 41. Health
+## 42. Health
 
 This may seem like a weird topic for my document, but hear me out: to be a
 seasoned software engineer, you need to be able to keep doing this work for
@@ -1590,3 +1646,5 @@ possible.
 - 2026 Jan 10 – Version 1 (by Zorzella)
 - 2026 Jan 11 – Added "Experience and intuition" and other misc changes (by
   Zorzella)
+- 2026 Jan 17 – New content on Databases/Datastores; links to my docs on
+  IntelliJ and VSCode customizations (by Zorzella)
