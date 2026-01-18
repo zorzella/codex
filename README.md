@@ -424,7 +424,9 @@ languages I find useful, and some brief thoughts about each of them,
 particularly some of their “uniquesses”, for better or worse, building on the
 terminology presented before.
 
-TODO Extract this content into a separate document and restructure it
+If you want to understand programming languages and their features in the
+context of the evolution of programming languages, read [this](Languages.md)
+document.
 
 ### Java
 
@@ -1644,7 +1646,11 @@ possible.
 ## Version History / Changelog
 
 - 2026 Jan 10 – Version 1 (by Zorzella)
-- 2026 Jan 11 – Added "Experience and intuition" and other misc changes (by
-  Zorzella)
-- 2026 Jan 17 – New content on Databases/Datastores; links to my docs on
-  IntelliJ and VSCode customizations (by Zorzella)
+- 2026 Jan 11 – Version 1.1. Added "Experience and intuition" and other misc
+  changes (by Zorzella)
+- 2026 Jan 17 – Version 1.2. New content on Databases/Datastores; links to my
+  docs on IntelliJ and VSCode customizations (by Zorzella)
+- 2026 Jan 17 – Version 1.3. New content on Databases/Datastores; links to my
+  docs on IntelliJ and VSCode customizations (by Zorzella)
+- 2026 Jan 18 - Version 1.4. Link to external document on programming languages
+  in their historical context.
