@@ -1503,6 +1503,9 @@ These are quite distinct, so let’s discuss each one separately
   be)
 - \[B4\] Understand how to use AI as your augmenter, not replacer
   - If you just blindly trust it, you are essentially saying it can replace you
+  - Understand the
+    [concept](https://www.theguardian.com/us-news/ng-interactive/2026/jan/18/tech-ai-bubble-burst-reverse-centaur?CMP=share_btn_url)
+    of centaurs and reverse centaurs to describe the ways to interact with AI
 
 ### Artificial Intelligence: As an Integrator
 
@@ -1654,3 +1657,4 @@ possible.
   docs on IntelliJ and VSCode customizations (by Zorzella)
 - 2026 Jan 18 - Version 1.4. Link to external document on programming languages
   in their historical context.
+- 2026 Jan 26 – Version 1.5. Added a link to the "centaur" article
