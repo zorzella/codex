@@ -999,7 +999,7 @@ Computers are much more powerful when connected to each other.
       - Why/when you’d want to do proxying at one vs another layer
   - Complications/Limitations
 - \[C5\] Understand the concept of Load Balancing
-  - How it can be implemented a
+  - How it can be implemented at different levels of the network stack
   - Stickiness
 - \[D4\] Understand tunneling
 - \[C4\] Learn about NAT
@@ -1658,3 +1658,4 @@ possible.
 - 2026 Jan 18 - Version 1.4. Link to external document on programming languages
   in their historical context.
 - 2026 Jan 26 – Version 1.5. Added a link to the "centaur" article
+- 2026 Feb 14 – Version 1.6. Small fix to the networking section
