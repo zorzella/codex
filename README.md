@@ -1474,6 +1474,8 @@ TODO: this section is under development
 - CI/CD
 - Observability
 - Monitoring
+  - https://sre.google/sre-book/monitoring-distributed-systems/
+- Google SRE book: https://sre.google/sre-book/table-of-contents/
 
 ## 40. Artificial Intelligence (AI)
 
