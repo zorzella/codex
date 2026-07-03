@@ -1189,6 +1189,8 @@ casual "modern" vs "traditional" to differentiate these two broad types.
 - \[C7\] Understand code coverage
   - And get to understand how they are intended to be used, and how they are
     often abused, and what problems arise from that
+  - Understand the pitfalls of having coverage requirements, e.g. in the context
+    of [Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law)
 - \[C8\] Understand the different kinds of testing (and the often conflicting
   terminology and overlap)
   - Unit tests
